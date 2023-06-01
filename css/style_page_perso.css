@@ -1,0 +1,45 @@
+.content {
+	max-width: 1040px;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+main {
+	display: flex;
+  	justify-content: center;
+}
+
+.content p {
+	padding-bottom: 16px;
+	text-align: justify;
+	line-height: 25px;
+}
+
+
+/* FORMAT ORDINATEUR */
+@media (min-width: 1024px) {
+
+	.content {
+		padding: 20px;
+		margin: 50px;
+	}
+
+}
+
+/* FORMAT TABLETTE */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+	.content {
+		padding: 15px;
+		margin: 20px;
+	}
+}
+
+/* FORMAT TELEPHONES PORTABLE */
+@media (max-width: 767px) {
+
+	.content {
+		padding: 5px;
+		margin: 2px;
+	}
+}

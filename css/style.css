@@ -15,22 +15,20 @@ body {
 	background-attachment: fixed;
 }
 
-main {
+.accueil{
 	text-align: center;
 	margin: 20px;
 }
 
 main img {
-	height: 500px;
-}
-
-main aside img {
-	height: 400px;
+	max-width: 500px;
+	height: auto;
 }
 
 /* Partie aside (logo rouge) */
 .logo_rouge img {
-	height: 400px;
+	max-height: 400px;
+	width: auto;
 }
 
 @keyframes rotate {
@@ -49,7 +47,7 @@ main aside img {
 	animation-fill-mode: forwards;
 }
 
-/* Menu de navigation pour les écrans d'ordinateur*/
+/* FORMAT ORDINATEUR */
 @media (min-width: 1024px) {
 	/* Logo */
 	.logo_menu {
@@ -61,7 +59,7 @@ main aside img {
 		width: 250px;
 	}
 
-	/* Menu */
+	/* Menu pour les ordinateurs */
 	.menu_nav {
 		text-align: center;
 		font-family: 'Teko-semibold';
@@ -93,9 +91,51 @@ main aside img {
 	.menu_icon {
 		display: none;
 	}
+
+	/* Menu en pied de page pour les ordinateurs */
+
+	footer nav {
+		text-align: center;
+		list-style-type: none;
+		background-color: rgba(255, 255, 255, 0.5);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	footer ul, p {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	footer p {
+		margin-top: 15px;
+	}
+
+	footer li {
+		display: inline-block;
+		position: relative;
+	}
+
+	footer li:not(:first-child)::before {
+		content: "|";
+		position: relative;
+		top: 2px;
+		margin: 0;
+		padding-left: 11px;
+		padding-right: 11px;
+		font-size: 20px;
+		color: #091723;
+	}
+
+	footer a {
+		text-decoration: none;
+		font-weight: bold;
+		color: #091723;
+		font-size: 15px;
+	}
 }
 
-/* Menu de navigation pour tablette */
+/* FORMAT TABLETTE */
 @media (min-width: 768px) and (max-width: 1023px) {
 	.logo_menu {
 		text-align: center;
@@ -106,9 +146,9 @@ main aside img {
 		width: 150px;
 	}
 
-	/* Pour faire disparaite le texte du menu déroulant */
+	/* Menu pour les tablettes */
 	.menu_nav {
-		display: none;
+		display: none; /* Pour faire disparaite le texte du menu déroulant */
 	}
 
 	.menu_icon {
@@ -151,9 +191,51 @@ main aside img {
 	#myMenu_nav a.active {
 		color: #D8AE44;
 	}
+
+	/* Menu en pied de page pour les tablettes */
+
+	footer nav {
+		text-align: center;
+		list-style-type: none;
+		background-color: rgba(255, 255, 255, 0.5);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	footer ul, p {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	footer p {
+		margin-top: 15px;
+	}
+
+	footer li {
+		display: inline-block;
+		position: relative;
+	}
+
+	footer li:not(:first-child)::before {
+		content: "|";
+		position: relative;
+		top: 2px;
+		margin: 0;
+		padding-left: 11px;
+		padding-right: 11px;
+		font-size: 20px;
+		color: #091723;
+	}
+
+	footer a {
+		text-decoration: none;
+		font-weight: bold;
+		color: #091723;
+		font-size: 15px;
+	}
 }
 
-/* Menu de navigation pour portable */
+/* FORMAT TELEPHONES PORTABLE */
 @media (max-width: 767px) {
 	.logo_menu {
 		text-align: center;
@@ -161,16 +243,27 @@ main aside img {
 	}
 	.logo_menu img {
 		text-align: center;
-		width: 120px;
+		width: 150px;
 	}
 
-	/* Pour faire disparaite le texte du menu déroulant */
+	main img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	/* Partie aside (logo rouge) */
+	.logo_rouge img {
+		max-height: 100%;
+		width: auto;
+	}
+
+	/* Menu pour les téléphones portable */
 	.menu_nav {
-		display: none;
+		display: none; /* Pour faire disparaite le texte du menu déroulant */
 	}
 
 	.menu_icon {
-		font-size: 20px;
+		font-size: 30px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -208,40 +301,38 @@ main aside img {
 
 	#myMenu_nav a.active {
 		color: #D8AE44;
-	}  
+	}
+
+	/* Menu en pied de page pour les téléphones portable */
+	
+	footer nav {
+		text-align: center;
+		background-color: rgba(255, 255, 255, 0.5);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	footer ul, p {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	footer li {
+		list-style-type: none;
+		display: block;
+		position: relative;
+		margin-bottom: 2px;
+	}
+
+	footer p {
+		margin-top: 15px;
+	}
+
+	footer a {
+		text-decoration: none;
+		font-weight: bold;
+		color: #091723;
+		font-size: 15px;
+	}
 }
 
-/* Menu en pied de page */
-footer {
-	background-color: rgba(255, 255, 255, 0.5);
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-footer nav {
-	text-align: center;
-	list-style-type: none;
-}
-
-footer li {
-	display: inline-block;
-	position: relative;
-}
-
-footer li:not(:first-child)::before {
-	content: "|";
-	position: relative;
-	top: 2px;
-	margin: 0;
-	padding-left: 11px;
-	padding-right: 11px;
-	font-size: 20px;
-	color: #091723;
- }
-
-footer a {
-	text-decoration: none;
-	font-weight: bold;
-	color: #091723;
-	font-size: 15px;
-}
