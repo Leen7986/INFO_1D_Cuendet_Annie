@@ -1,0 +1,114 @@
+.menu_aside {
+	text-align: center;
+}
+
+.menu_aside li {
+	display: inline-block;
+	position: relative;
+}
+
+.menu_aside li {
+	padding: 10px 20px 10px 20px;
+	background-color: #57788C;
+	border-radius: 20px;
+	margin-right: 10px;
+}
+
+.menu_aside a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #091723;
+	font-size: 15px;
+}
+
+/* aside {
+	display: block;
+	height: 500px;
+	margin-left: 240px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+	overflow: scroll;
+} */
+
+aside {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Paramètres pour la course */
+
+
+/* Paramètres pour le bateau */
+.bateau img {
+	display: inline-block;
+	height: 600px;
+}
+
+.rotate-0 {
+	transform: rotate(0deg);
+}
+
+.rotate-355 {
+	transform: rotate(355deg);
+}
+
+.rotate-5 {
+	transform: rotate(5deg);
+}
+
+/* Paramètres du tableau */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid white;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+  }
+
+  th {
+    background-color: green;
+    color: white;
+    vertical-align: middle;
+  }
+
+  tr:nth-child(even) {
+    background-color: lightblue;
+  }
+
+  tr:nth-child(odd) {
+    background-color: white;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  td:first-child {
+    border-left: 1px solid white;
+  }
+
+  td:last-child {
+    border-right: none;
+  }
+
+  tr:first-child th:first-child {
+    border-top-left-radius: 5px;
+  }
+
+  tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+    border-right: none;
+  }
+
+  tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+  }
+
+  tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+  }

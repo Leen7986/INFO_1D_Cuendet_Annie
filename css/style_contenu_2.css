@@ -1,0 +1,20 @@
+.menu_aside {
+	float: left;
+	border: 1px solid black;
+	width: 210px;
+	height: 500px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 15px;
+}
+
+aside {
+	display: block;
+	border: 1px solid black;
+	height: 500px;
+	margin-left: 240px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+	overflow: scroll;
+}

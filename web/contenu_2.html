@@ -1,48 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		<title>Contenu 2</title>
-		<!-- Lien vers le fichier CSS pour le style -->
 		<link rel="stylesheet" href="../css/style.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Martial Cuendet</title>
 	</head>
-<body>
-	<!-- En-tête avec le logo et le menu de navigation -->
-	<header>
-		<div class="logo_menu">
-			<img src="../pictures/Logo-Menu.png">
-		</div>
-	<nav class="menu_nav">
-		<ul>
-			<li><a href="../index.html">Accueil</a></li>
-			<li><a href="./contact.html">Contact</a></li>
-			<li><a href="./contenu_1.html">Contenu 1</a></li>
-			<li><a href="./contenu_2.html" class="active">Contenu 2</a></li>
-			<li><a href="./page_perso.html">Personnelle</a></li>
-		</ul>
-	</nav>
-	</header>
-  
-  <div class="content">
-    <h1>Contenu 2</h1>
-    <p>Texte formaté...</p>
-    <img src="image2.jpg" alt="Image 2">
-    <video controls>
-      <source src="video.mp4" type="video/mp4">
-    </video>
-    <a href="#ancre">Ancre</a>
-  </div>
-  
-	<footer>
-		<nav>
-			<ul>
-				<li><a href="./impressum.html">Impressum</a></li>
-				<li><a href="mailto:contact@association-talen.ch">Contact Webmaster</a></li>
-				<li><a href="./conditions.html">Conditions d'utilisation</a></li>
-				<li><a href="./protection.html">Protection des données</a></li>
-			</ul>
-			<p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
-		</nav>
-	</footer>
-</body>
+	<body>
+		<!-- En-tête avec le logo et le menu de navigation entre les pages -->
+		<header>
+			<div class="logo_menu">
+				<img src="../pictures/Logo-Menu.png">
+			</div>
+			<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+			<nav class="menu_nav" id="myMenu_nav">
+				<ul>
+					<li><a href="../index.html">Accueil</a></li>
+					<li><a href="./contenu_1.html">La mini transat</a></li>
+					<li><a href="./contenu_2.html" class="active">Martial Cuendet</a></li>
+					<li><a href="./page_perso.html">L'association</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<link rel="stylesheet" href="../css/style_contenu_2.css">
+			<!-- Le menu de navigation dans la page -->
+			<nav class="menu_aside">
+				<h2 id="table">Thèmes :</h2>
+				<p><a class="table" href="#skippeur">Le skippeur</a></p>
+				<p><a class="table" href="#photos">Photos</a></p>
+				<p><a class="table" href="#video">Vidéo</a></p>
+			</nav>
+			<!-- Les éléments de la page -->
+			<aside>
+				<h2 id="skippeur">Marial Cuendet - Le skippeur</h2>
+				<img src="../pictures/martial_1.png" alt="Martial" title="Martial">
+				<p>PRÉNOM : Martial
+					NOM : Cuendet
+					NÉ LE : 18 avril 1968, aux Charbonnières
+					Pour Martial, l’amour du sport est né à l'âge de 8 ans, en adhérant au ski club du Lieu en ski de fond.
+					Il a également fait ses débuts sur un OPTIMIST que sa famille avait reçu.
+					A l’aise sur l’eau comme en montagne, il se dépassera autant dans les compétitions de ski de fond, de course en montagne et de vélo.
+					Un vrai sportif accompli.
+					5 ans d’équipe nationale de course en montagne :
+					• plusieurs fois 1er en Coupe d’Europe en junior et une fois en Senior
+					• 1 titre de champion Suisse en course de montagne Junior
+					• 3ème par équipe en Championnat du Monde en Italie
+					• 9ème en individuel course de montagne Junior
+					• Ainsi que plusieurs titres régionaux
+					Autres :
+					• 1 patrouille des glaciers
+					• 1 raid Lausanne-Lillehamer en 5 jours</p>
+
+				<h2 id="photos">Quelques photos de Martial</h2>
+				<img src="../pictures/martial_2.jpg" alt="Martial" title="Martial">
+				<img src="../pictures/martial_3.jpg" alt="Martial" title="Martial">
+				<img src="../pictures/martial_4.jpg" alt="Martial" title="Martial">
+
+				<h2 id="video">Reportage de la Télé</h2>
+				<video controls>
+					<source src="../videos/martial_la_tele_22.12.2021.mp4" type="video/mp4">
+				</video>
+			</aside>
+		</main>
+		<!-- Le pied de page -->
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="./impressum.html">Impressum</a></li>
+					<li><a href="mailto:contact@association-talen.ch">Contact Webmaster</a></li>
+					<li><a href="./conditions.html">Conditions d'utilisation</a></li>
+					<li><a href="./protection.html">Protection des données</a></li>
+				</ul>
+				<p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
+			</nav>
+		</footer>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myMenu_nav");
+				if(x.className === "menu_nav") {
+					x.className += " responsive";
+				} else {
+					x.className = "menu_nav";
+				}
+			}
+		</script>
+	</body>
 </html>

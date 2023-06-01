@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<title>Protection des données</title>
-	<!-- Lien vers le fichier CSS pour le style -->
-	<link rel="stylesheet" href="../css/style.css"/>
-</head>
-<body>
-	<!-- En-tête avec le logo et le menu de navigation -->
-	<header>
-		<div class="logo_menu">
-			<img src="../pictures/Logo-Menu.png">
-		</div>
-		<nav class="menu_nav">
-			<ul>
-				<li><a href="../index.html">Accueil</a></li>
-				<li><a href="../web/contact.html">Contact</a></li>
-				<li><a href="../web/contenu_1.html">Contenu 1</a></li>
-				<li><a href="../web/contenu_2.html">Contenu 2</a></li>
-				<li><a href="../web/page_perso.html">Personnelle</a></li>
-			</ul>
-		</nav>
-	</header>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/style.css"/>
+		<title>Protection des données</title>
+	</head>
+	<body>
+		<!-- En-tête avec le logo et le menu de navigation -->
+		<header>
+			<div class="logo_menu">
+				<img src="../pictures/Logo-Menu.png">
+			</div>
+			<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+			<nav class="menu_nav" id="myMenu_nav">
+				<ul>
+					<li><a href="../index.html">Accueil</a></li>
+					<li><a href="../web/contenu_1.html">La mini transat</a></li>
+					<li><a href="../web/contenu_2.html">Martial Cuendet</a></li>
+					<li><a href="../web/page_perso.html">L'association</a></li>
+					<li><a href="../web/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
-	<!-- Corps de la page -->
-	<div class="content">
-		<!-- Contenu de la page d'accueil -->
-		<h1>Protection des données</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
-	</div>
-	
-	<!-- Pied de page -->
-	<footer>
-		<nav>
-			<ul>
-				<li><a href="./impressum.html">Impressum</a></li>
-				<li><a href="mailto:contact@association-talen.ch">Contact Webmaster</a></li>
-				<li><a href="./conditions.html">Conditions d'utilisation</a></li>
-				<li><a href="./protection.html">Protection des données</a></li>
-			</ul>
-			<p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
-		</nav>
-	</footer>
-</body>
+		<!-- Corps de la page -->
+		<div class="content">
+			<!-- Contenu de la page d'accueil -->
+			<h1>Protection des données</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+		</div>
+		
+		<!-- Pied de page -->
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="./impressum.html">Impressum</a></li>
+					<li><a href="mailto:contact@association-talen.ch">Contact Webmaster</a></li>
+					<li><a href="./conditions.html">Conditions d'utilisation</a></li>
+					<li><a href="./protection.html">Protection des données</a></li>
+				</ul>
+				<p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
+			</nav>
+		</footer>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myMenu_nav");
+				if(x.className === "menu_nav") {
+					x.className += " responsive";
+				} else {
+					x.className = "menu_nav";
+				}
+			}
+		</script>
+	</body>
 </html>

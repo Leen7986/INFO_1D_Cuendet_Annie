@@ -1,57 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		<title>Contenu 1</title>
-		<!-- Lien vers le fichier CSS pour le style -->
 		<link rel="stylesheet" href="../css/style.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>La mini transat</title>
 	</head>
-<body>
-	<!-- En-tête avec le logo et le menu de navigation -->
-	<header>
-		<div class="logo_menu">
-			<img src="../pictures/Logo-Menu.png">
-		</div>
-	<nav class="menu_nav">
-		<ul>
-			<li><a href="../index.html">Accueil</a></li>
-			<li><a href="./contact.html">Contact</a></li>
-			<li><a href="./contenu_1.html" class="active">Contenu 1</a></li>
-			<li><a href="./contenu_2.html">Contenu 2</a></li>
-			<li><a href="./page_perso.html">Personnelle</a></li>
-		</ul>
-	</nav>
-	</header>
-  
-  <div class="content">
-    <h1>Contenu 1</h1>
-    <p>Texte formaté...</p>
-    <table>
-      <tr>
-        <th>Colonne 1</th>
-        <th>Colonne 2</th>
-        <th>Colonne 3</th>
-      </tr>
-      <tr>
-        <td>Donnée 1</td>
-        <td>Donnée 2</td>
-        <td>Donnée 3</td>
-      </tr>
-    </table>
-    <img src="image1.jpg" alt="Image 1">
-    <a href="#ancre">Ancre</a>
-  </div>
-  
-	<footer>
-		<nav>
-			<ul>
-				<li><a href="./impressum.html">Impressum</a></li>
-				<li><a href="mailto:contact@association-talen.ch">Contact Webmaster</a></li>
-				<li><a href="./conditions.html">Conditions d'utilisation</a></li>
-				<li><a href="./protection.html">Protection des données</a></li>
-			</ul>
-			<p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
-		</nav>
-	</footer>
-</body>
+	<body>
+		<!-- En-tête avec le logo et le menu de navigation -->
+		<header>
+			<div class="logo_menu">
+				<img src="../pictures/Logo-Menu.png">
+			</div>
+			<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+			<nav class="menu_nav" id="myMenu_nav">
+				<ul>
+					<li><a href="../index.html">Accueil</a></li>
+					<li><a href="./contenu_1.html" class="active">La mini transat</a></li>
+					<li><a href="./contenu_2.html">Martial Cuendet</a></li>
+					<li><a href="./page_perso.html">L'association</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<link rel="stylesheet" href="../css/style_contenu_1.css">
+			<nav class="menu_aside">
+				<ul>
+					<li><a class="table" href="#course">La course</a></li>
+					<li><a class="table" href="#bateau">Le bateau</a></li>
+					<li><a class="table" href="#participation">Ce qu'il faut faire avant</a></li>
+				</ul>
+			</nav>
+			<!-- Les éléments de la page -->
+			<aside>
+				<h2 id="course">La mini transat c'est quoi ?</h2>
+				<img src="../pictures/carte.jpg" title="Carte Mini Transat" alt="Carte Mini Transat">
+				<p>6.5 taille en mètre des bateaux
+					(c’est le plus petit voiliers de course au large)
+					30 nombre de jours de navigation, sans moyen de communication avec la terre
+					90 Nombre de concurrents-es, professionnels- les et amateurs-trices provenant de plus de
+					12 pays différents
+					7’500 distance à parcourir en km
+					13’000’000 nombre de vue sur le site officiel de la course</p>
+				<div class="bateau">
+					<h2 id="bateau">Le bateau</h2>
+				
+					<img src="../pictures/Présentation1.png" title="Le Paris-Texas 5" alt="Le Paris-Texas 5">
+				</div>
+				
+
+				Constructeur : Architecte : Année de constr. : Matériaux :
+Longueur HT : Largeur : Poids :
+FAGNANT-AMCO JM FINOT
+1991
+composite verre époxy 6.50 m
+2.95 m
+~ 900 kg
+
+				<h2 id="participation">Ce qu'il faut faire pour y participer ?</h2>
+				<p>Il faut se qualifier en effectuant 2500 milles (4600 km), dont :
+					- 1500 milles en double ou en solo suivant le programme des courses validées par la commission de qualification
+					- 1000 milles en solo suivant un itinéraires bien défini, soit en Méditerranée ou en Bretagne</p>
+				<p>Pour 2022 - 2023, le programme de Martial débutera au moins de juin pour les 1000 milles en solo en Méditerranées et se poursuivra en septembre à Gênes pour la régate 222 MINI SOLO, première possibilité de qualif catégorie C.</p>
+				<table>
+					<tr>
+						<th>Dates</th>
+						<th>Course</th>
+						<th>Catégorie</th>
+						<th>Solo / Double</th>
+						<th>Parcours</th>
+						<th>Nombre de milles</th>
+					</tr>
+					<tr>
+						<td>7 – 12 septembre 22<br>départ le 9 septembre</td>
+						<td>222 MINI SOLO</td>
+						<td>C</td>
+						<td>Solo</td>
+						<td>Départ et arrivée à Gênes (I)</td>
+						<td>222 nm</td>
+					  </tr>
+					  <tr>
+						<td>Mars 23</td>
+						<td>MINI GOLF</td>
+						<td>C</td>
+						<td>Solo</td>
+						<td>Départ et arrivée de la Grande Motte (F)</td>
+						<td>100 nm</td>
+					  </tr>
+					  <tr>
+						<td>Avril 23</td>
+						<td>SOLOMED 1</td>
+						<td>C</td>
+						<td>Solo</td>
+						<td>Départ de Barcelone (E) et arrivée à Sa Rapita (E)</td>
+						<td>160 nm</td>
+					  </tr>
+					  <tr>
+						<td>Avril 23</td>
+						<td>SOLOMED 2</td>
+						<td>B</td>
+						<td>Solo</td>
+						<td>Sa Rapita (E) – Saidia (MAROC) – Barcelone (E)</td>
+						<td>860 nm</td>
+					  </tr>
+					  <tr>
+						<td>Avril 23</td>
+						<td>GPI</td>
+						<td>B</td>
+						<td>Double</td>
+						<td>Départ et arrivée à Gênes (I)</td>
+						<td>500 nm</td>
+					  </tr>
+					  <tr>
+						<td>Avril – mai 23</td>
+						<td>CORSICA MED</td>
+						<td>B</td>
+						<td>Solo</td>
+						<td>Départ/arrivée à Marseille (F)</td>
+						<td>500 nm</td>
+					  </tr>
+					  <tr>
+						<td>Août – septembre 23</td>
+						<td>MARE NOSTRUM</td>
+						<td>B</td>
+						<td>Double</td>
+						<td>Départ et arrivée à Garraf (E)</td>
+						<td>500 nm</td>
+					  </tr>
+					  <tr>
+						<td>Septembre 23</td>
+						<td>222 MINI SOLO</td>
+						<td>C</td>
+						<td>Solo</td>
+						<td>Départ et arrivée à Gênes (I)</td>
+						<td>222 nm</td>
+					  </tr>
+					  <tr>
+						<td>Septembre 23</td>
+						<td>MINI BARCELONA</td>
+						<td>B</td>
+						<td>Solo</td>
+						<td>Départ/arrivée Barcelone (E)</td>
+						<td>300 nm</td>
+					  </tr>
+				</table>
+
+				
+			</aside>
+		</main>
+		<!-- Le pied de page -->
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="./impressum.html">Impressum</a></li>
+					<li><a href="mailto:contact@association-talen.ch">Contact Webmaster</a></li>
+					<li><a href="./conditions.html">Conditions d'utilisation</a></li>
+					<li><a href="./protection.html">Protection des données</a></li>
+				</ul>
+				<p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
+			</nav>
+		</footer>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myMenu_nav");
+				if(x.className === "menu_nav") {
+					x.className += " responsive";
+				} else {
+					x.className = "menu_nav";
+				}
+			}
+		</script>
+	</body>
 </html>

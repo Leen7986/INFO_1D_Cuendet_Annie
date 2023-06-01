@@ -1,11 +1,12 @@
-/* Différente police d'écriture */
+/* Police d'écriture supplémentaire */
 @font-face {
-    font-family: 'teko-semibold';
-    src: url('../font/teko-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'teko-semibold';
+	src: url('../font/teko-semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
-/* Syltes du corps de la page */
+
+/* Corps de la page */
 body {
 	font-family: 'Verdana';
 	background-image: url("../pictures/background.jpg");
@@ -14,78 +15,203 @@ body {
 	background-attachment: fixed;
 }
 
-/* Styles pour le logo et le menu de navigation */
-.logo_menu {
-	text-align: center;
-	margin-top: 50px;
-}
-
-.logo_menu img {
-	width: 250px;
-}
-  
-.menu_nav {
-	text-align: center;
-	font-family: 'Teko-semibold';
-	font-size: 25px;
-	list-style-type: none;
-	text-transform: uppercase;
-}
-
-.menu_nav li {
-	display: inline-block;
-	margin-right: 25px;
-	position: relative;
-}
-
-.menu_nav a {
-	text-decoration: none;
-	color: #091723;
-}
- 
-.menu_nav a:hover {
-	color: #57788C;
-}
-  
-.menu_nav a.active {
-	color: #D8AE44;
-}
-
-/* Styles pour le contenu principal */
-.content {
+main {
 	text-align: center;
 	margin: 20px;
 }
 
-.content img {
+main img {
 	height: 500px;
 }
 
-.content aside img {
+main aside img {
 	height: 400px;
 }
 
-/* Styles pour la partie aside */
-aside img {
+/* Partie aside (logo rouge) */
+.logo_rouge img {
 	height: 400px;
 }
+
 @keyframes rotate {
 	0% {
-	  transform: rotate(225deg);
-	  opacity: 0;
+		transform: rotate(225deg);
+		opacity: 0;
 	}
 	100% {
-	  transform: rotate(360deg);
-	  opacity: 1;
+		transform: rotate(360deg);
+		opacity: 1;
 	}
 }
-  
+
 .rotation {
 	animation: rotate 1s linear;
 	animation-fill-mode: forwards;
 }
-  
-/* Styles pour le pied de page */
+
+/* Menu de navigation pour les écrans d'ordinateur*/
+@media (min-width: 1024px) {
+	/* Logo */
+	.logo_menu {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.logo_menu img {
+		width: 250px;
+	}
+
+	/* Menu */
+	.menu_nav {
+		text-align: center;
+		font-family: 'Teko-semibold';
+		font-size: 25px;
+		list-style-type: none;
+		text-transform: uppercase;
+	}
+
+	.menu_nav li {
+		display: inline-block;
+		margin-right: 25px;
+		position: relative;
+	}
+
+	.menu_nav a {
+		text-decoration: none;
+		color: #091723;
+	}
+
+	.menu_nav a:hover { /* couleur du texte au survole avec la souris */
+		color: #57788C; 
+	}
+
+	.menu_nav a.active { /* couleur du texte de la page active */
+		color: #D8AE44;
+	}
+
+	/* l'icone burger du menu ne s'affiche pas quand c'est un grand écran */
+	.menu_icon {
+		display: none;
+	}
+}
+
+/* Menu de navigation pour tablette */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.logo_menu {
+		text-align: center;
+		margin-top: 50px;
+	}
+	.logo_menu img {
+		text-align: center;
+		width: 150px;
+	}
+
+	/* Pour faire disparaite le texte du menu déroulant */
+	.menu_nav {
+		display: none;
+	}
+
+	.menu_icon {
+		font-size: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	#myMenu_nav.responsive {
+		display: block;
+	}
+
+	#myMenu_nav ul{
+		font-family: 'Teko-semibold';
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 0px;
+		background-color: rgba(255, 255, 255, 0.5);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	#myMenu_nav li {
+  		list-style-type: none;
+	}
+
+	#myMenu_nav a {
+		text-decoration: none;
+		color: #091723;
+	}
+
+	#myMenu_nav a:hover {
+		color: #57788C;
+	}
+
+	#myMenu_nav a.active {
+		color: #D8AE44;
+	}
+}
+
+/* Menu de navigation pour portable */
+@media (max-width: 767px) {
+	.logo_menu {
+		text-align: center;
+		margin-top: 50px;
+	}
+	.logo_menu img {
+		text-align: center;
+		width: 120px;
+	}
+
+	/* Pour faire disparaite le texte du menu déroulant */
+	.menu_nav {
+		display: none;
+	}
+
+	.menu_icon {
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	#myMenu_nav.responsive {
+		display: block;
+	}
+
+	#myMenu_nav ul{
+		font-family: 'Teko-semibold';
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 0px;
+		background-color: rgba(255, 255, 255, 0.5);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	#myMenu_nav li {
+  		list-style-type: none;
+	}
+
+	#myMenu_nav a {
+		text-decoration: none;
+		color: #091723;
+	}
+
+	#myMenu_nav a:hover {
+		color: #57788C;
+	}
+
+	#myMenu_nav a.active {
+		color: #D8AE44;
+	}  
+}
+
+/* Menu en pied de page */
 footer {
 	background-color: rgba(255, 255, 255, 0.5);
 	padding-top: 10px;
@@ -119,6 +245,3 @@ footer a {
 	color: #091723;
 	font-size: 15px;
 }
-  
-  /* Styles spécifiques à chaque page */
-  /* Ajoutez vos propres styles ici pour chaque page si nécessaire */
