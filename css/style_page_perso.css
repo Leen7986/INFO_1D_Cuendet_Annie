@@ -1,7 +1,7 @@
 .content {
 	max-width: 1040px;
-	background-color: rgba(255, 255, 255, 0.3);
-	box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+	background-color: rgba(255, 255, 255, 0.55);
+	box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.5);
 }
 
 main {

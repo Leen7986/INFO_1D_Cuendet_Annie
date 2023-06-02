@@ -11,7 +11,7 @@
 		<!-- En-tête avec le logo et le menu de navigation -->
 		<header>
 			<div class="logo_menu">
-				<img src="../pictures/logo-menu.png" alt="Logo menu">
+				<a href="../index.html"><img src="../pictures/logo-menu.png" alt="Logo menu"></a>
 			</div>
 			<div class="menu_icon" onclick="myFunction()">&#9776;</div>
 			<nav class="menu_nav" id="myMenu_nav">
@@ -33,121 +33,144 @@
 					<li><a class="table" href="#participation">Ce qu'il faut faire avant</a></li>
 				</ul>
 			</nav>
-			<!-- Les éléments de la page -->
+			<!-- Les éléments de la partie aside -->
 			<aside>
-				<h2 id="course">La mini transat c'est quoi ?</h2>
-				<img src="../pictures/carte.jpg" title="Carte Mini Transat" alt="Carte Mini Transat">
-				<p>6.5 taille en mètre des bateaux
-					(c’est le plus petit voiliers de course au large)
-					30 nombre de jours de navigation, sans moyen de communication avec la terre
-					90 Nombre de concurrents-es, professionnels- les et amateurs-trices provenant de plus de
-					12 pays différents
-					7’500 distance à parcourir en km
-					13’000’000 nombre de vue sur le site officiel de la course</p>
+				<!-- Mini Transat -->
+				<div class="mini_transat">
+					<h2 id="course">La mini transat c'est quoi ?</h2>
+					<img src="../pictures/carte.png" alt="Carte Mini Transat">
+					<p><span class="font_caveat">6.5</span> taille en mètre des bateaux
+						<em>(c’est le plus petit voiliers de course au large)</em></p>
+						<p><span class="font_caveat">30</span> nombre de jours de navigation, 
+							sans moyen de communication avec la terre</p>
+						<p><span class="font_caveat">90</span> nombre de concurrents-es, 
+							professionnels- les et amateurs-trices provenant de plus de
+						12 pays différents</p>
+						<p><span class="font_caveat">7’500</span> distance à parcourir en km</p>
+						<p><span class="font_caveat">13'000'000</span> nombre de vue sur le site officiel de la course</p>
+				</div>
+				<!-- Bateau -->
 				<div class="bateau">
 					<h2 id="bateau">Le bateau</h2>
-				
-					<img src="../pictures/presentation_1.png" title="Le Paris-Texas 5" alt="Le Paris-Texas 5">
+					<div class="photo_bateau">
+						<img src="../pictures/bateau_1.png" title="Le Paris-Texas 5" alt="Le Paris-Texas 5">
+						<img src="../pictures/bateau_2.png" title="Le Paris-Texas 5" alt="Le Paris-Texas 5">
+						<img src="../pictures/bateau_3.png" title="Le Paris-Texas 5" alt="Le Paris-Texas 5">
+					</div>
+					<table>
+						<tr>
+						  <th>Constructeur :</th>
+						  <td>FAGNANT-AMCO</td>
+						</tr>
+						<tr>
+						  <th>Architecte :</th>
+						  <td>JM FINOT</td>
+						</tr>
+						<tr>
+						  <th>Année const. :</th>
+						  <td>1991</td>
+						</tr>
+						<tr>
+						  <th>Matériaux :</th>
+						  <td>composite verre époxy</td>
+						</tr>
+						<tr>
+						  <th>Longueur HT :</th>
+						  <td>6.50 m</td>
+						</tr>
+						<tr>
+						  <th>Largeur :</th>
+						  <td>2.95 m</td>
+						</tr>
+						<tr>
+						  <th>Poids :</th>
+						  <td>~900 kg</td>
+						</tr>
+					  </table>
 				</div>
-				
-
-				Constructeur : Architecte : Année de constr. : Matériaux :
-Longueur HT : Largeur : Poids :
-FAGNANT-AMCO JM FINOT
-1991
-composite verre époxy 6.50 m
-2.95 m
-~ 900 kg
-
-				<h2 id="participation">Ce qu'il faut faire pour y participer ?</h2>
-				<p>Il faut se qualifier en effectuant 2500 milles (4600 km), dont :
-					- 1500 milles en double ou en solo suivant le programme des courses validées par la commission de qualification
-					- 1000 milles en solo suivant un itinéraires bien défini, soit en Méditerranée ou en Bretagne</p>
-				<p>Pour 2022 - 2023, le programme de Martial débutera au moins de juin pour les 1000 milles en solo en Méditerranées et se poursuivra en septembre à Gênes pour la régate 222 MINI SOLO, première possibilité de qualif catégorie C.</p>
-				<table>
-					<tr>
-						<th>Dates</th>
-						<th>Course</th>
-						<th>Catégorie</th>
-						<th>Solo / Double</th>
-						<th>Parcours</th>
-						<th>Nombre de milles</th>
-					</tr>
-					<tr>
-						<td>7 – 12 septembre 22<br>départ le 9 septembre</td>
-						<td>222 MINI SOLO</td>
-						<td>C</td>
-						<td>Solo</td>
-						<td>Départ et arrivée à Gênes (I)</td>
-						<td>222 nm</td>
-					  </tr>
-					  <tr>
-						<td>Mars 23</td>
-						<td>MINI GOLF</td>
-						<td>C</td>
-						<td>Solo</td>
-						<td>Départ et arrivée de la Grande Motte (F)</td>
-						<td>100 nm</td>
-					  </tr>
-					  <tr>
-						<td>Avril 23</td>
-						<td>SOLOMED 1</td>
-						<td>C</td>
-						<td>Solo</td>
-						<td>Départ de Barcelone (E) et arrivée à Sa Rapita (E)</td>
-						<td>160 nm</td>
-					  </tr>
-					  <tr>
-						<td>Avril 23</td>
-						<td>SOLOMED 2</td>
-						<td>B</td>
-						<td>Solo</td>
-						<td>Sa Rapita (E) – Saidia (MAROC) – Barcelone (E)</td>
-						<td>860 nm</td>
-					  </tr>
-					  <tr>
-						<td>Avril 23</td>
-						<td>GPI</td>
-						<td>B</td>
-						<td>Double</td>
-						<td>Départ et arrivée à Gênes (I)</td>
-						<td>500 nm</td>
-					  </tr>
-					  <tr>
-						<td>Avril – mai 23</td>
-						<td>CORSICA MED</td>
-						<td>B</td>
-						<td>Solo</td>
-						<td>Départ/arrivée à Marseille (F)</td>
-						<td>500 nm</td>
-					  </tr>
-					  <tr>
-						<td>Août – septembre 23</td>
-						<td>MARE NOSTRUM</td>
-						<td>B</td>
-						<td>Double</td>
-						<td>Départ et arrivée à Garraf (E)</td>
-						<td>500 nm</td>
-					  </tr>
-					  <tr>
-						<td>Septembre 23</td>
-						<td>222 MINI SOLO</td>
-						<td>C</td>
-						<td>Solo</td>
-						<td>Départ et arrivée à Gênes (I)</td>
-						<td>222 nm</td>
-					  </tr>
-					  <tr>
-						<td>Septembre 23</td>
-						<td>MINI BARCELONA</td>
-						<td>B</td>
-						<td>Solo</td>
-						<td>Départ/arrivée Barcelone (E)</td>
-						<td>300 nm</td>
-					  </tr>
-				</table>
-
-				
+				<!-- Participation -->
+				<div class="participation">
+					<h2 id="participation">Ce qu'il faut faire pour y participer ?</h2>
+					<p>Il faut se qualifier en effectuant 2500 milles (4600 km), dont :</p>
+					<p>- 1500 milles en double ou en solo suivant le programme des courses validées par la 
+						commission de qualification</p>
+					<p>- 1000 milles en solo suivant un itinéraires bien défini, soit en Méditerranée ou en Bretagne</p>
+					<p>Pour 2022 - 2023, le programme de Martial débutera au moins de juin pour les 1000 milles en 
+						solo en Méditerranées et se poursuivra en septembre à Gênes pour la régate 222 MINI SOLO, 
+						première possibilité de qualif catégorie C.</p>
+					<table>
+						<tr>
+							<th>Dates</th>
+							<th>Course</th>
+							<th>Cat.</th>
+							<th>Solo<br>/ Double</th>
+							<th>Parcours et nombre de milles</th>
+						</tr>
+						<tr>
+							<td>7 – 12 sept.e 22<br><em>(départ le 9 sept.)</em></td>
+							<td>222 MINI SOLO</td>
+							<td>C</td>
+							<td>Solo</td>
+							<td>Départ et arrivée à Gênes (I)<br>222 nm</td>
+						</tr>
+						<tr>
+							<td>Mars 23</td>
+							<td>MINI GOLF</td>
+							<td>C</td>
+							<td>Solo</td>
+							<td>Départ et arrivée de la Grande Motte (F)<br>100 nm</td>
+						</tr>
+						<tr>
+							<td>Avril 23</td>
+							<td>SOLOMED 1</td>
+							<td>C</td>
+							<td>Solo</td>
+							<td>Départ de Barcelone (E) et arrivée à Sa Rapita (E)<br>160 nm</td>
+						</tr>
+						<tr>
+							<td>Avril 23</td>
+							<td>SOLOMED 2</td>
+							<td>B</td>
+							<td>Solo</td>
+							<td>Sa Rapita (E) – Saidia (MAROC) – Barcelone (E)<br>860 nm</td>
+						</tr>
+						<tr>
+							<td>Avril 23</td>
+							<td>GPI</td>
+							<td>B</td>
+							<td>Double</td>
+							<td>Départ et arrivée à Gênes (I)<br>500 nm</td>
+						</tr>
+						<tr>
+							<td>Avril – mai 23</td>
+							<td>CORSICA MED</td>
+							<td>B</td>
+							<td>Solo</td>
+							<td>Départ/arrivée à Marseille (F)<br>500 nm</td>
+						</tr>
+						<tr>
+							<td>Août – sept. 23</td>
+							<td>MARE NOSTRUM</td>
+							<td>B</td>
+							<td>Double</td>
+							<td>Départ et arrivée à Garraf (E)<br>500 nm</td>
+						</tr>
+						<tr>
+							<td>Septembre 23</td>
+							<td>222 MINI SOLO</td>
+							<td>C</td>
+							<td>Solo</td>
+							<td>Départ et arrivée à Gênes (I)<br>222 nm</td>
+						</tr>
+						<tr>
+							<td>Septembre 23</td>
+							<td>MINI BARCELONA</td>
+							<td>B</td>
+							<td>Solo</td>
+							<td>Départ/arrivée Barcelone (E)<br>300 nm</td>
+						</tr>
+					</table>
+				</div>
 			</aside>
 		</main>
 		<!-- Le pied de page -->

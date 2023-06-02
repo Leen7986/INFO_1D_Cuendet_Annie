@@ -6,6 +6,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'caveat-regular';
+	src: url('../font/caveat-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* Corps de la page */
 body {
 	font-family: 'Verdana';
@@ -97,7 +104,6 @@ main img {
 	footer nav {
 		text-align: center;
 		list-style-type: none;
-		background-color: rgba(255, 255, 255, 0.5);
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
@@ -109,6 +115,7 @@ main img {
 
 	footer p {
 		margin-top: 15px;
+		color: rgb(188, 216, 237);
 	}
 
 	footer li {
@@ -124,13 +131,13 @@ main img {
 		padding-left: 11px;
 		padding-right: 11px;
 		font-size: 20px;
-		color: #091723;
+		color: rgb(188, 216, 237);
 	}
 
 	footer a {
 		text-decoration: none;
 		font-weight: bold;
-		color: #091723;
+		color: rgb(188, 216, 237);
 		font-size: 15px;
 	}
 }
@@ -197,7 +204,6 @@ main img {
 	footer nav {
 		text-align: center;
 		list-style-type: none;
-		background-color: rgba(255, 255, 255, 0.5);
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
@@ -209,6 +215,7 @@ main img {
 
 	footer p {
 		margin-top: 15px;
+		color: rgb(188, 216, 237);
 	}
 
 	footer li {
@@ -224,13 +231,13 @@ main img {
 		padding-left: 11px;
 		padding-right: 11px;
 		font-size: 20px;
-		color: #091723;
+		color: rgb(188, 216, 237);
 	}
 
 	footer a {
 		text-decoration: none;
 		font-weight: bold;
-		color: #091723;
+		color: rgb(188, 216, 237);
 		font-size: 15px;
 	}
 }
@@ -307,7 +314,6 @@ main img {
 	
 	footer nav {
 		text-align: center;
-		background-color: rgba(255, 255, 255, 0.5);
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
@@ -326,12 +332,13 @@ main img {
 
 	footer p {
 		margin-top: 15px;
+		color: rgb(188, 216, 237);
 	}
 
 	footer a {
 		text-decoration: none;
 		font-weight: bold;
-		color: #091723;
+		color: rgb(188, 216, 237);
 		font-size: 15px;
 	}
 }
