@@ -169,6 +169,12 @@ aside {
 	margin-top: 50px;
 }
 
+.participation p, li {
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 25px;
+}
+
 /* Paramètres du tableau */
 .participation table {
     border-collapse: collapse;
@@ -238,6 +244,8 @@ aside {
   }
 
   @media (max-width: 767px) {
-
-    
+	.participation th,
+    .participation td {
+    	font-size: 8px;
+    }
   }
