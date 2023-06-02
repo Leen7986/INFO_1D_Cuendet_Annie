@@ -10,10 +10,21 @@
 	<body>
 		<!-- En-tête avec le logo et le menu de navigation -->
 		<header>
-			<div class="logo_menu">
+			<table class="logo_menu">
+				<tr>
+				  <td>
+					<a href="../index.html"><img src="../pictures/logo-menu.png" alt="Logo menu"></a>
+				  </td>
+				  <td>
+					<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+				  </td>
+				</tr>
+			  </table>
+			<!-- <div class="logo_menu">
 				<a href="../index.html"><img src="../pictures/logo-menu.png" alt="Logo menu"></a>
-			</div>
-			<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+				<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+			</div> -->
+			<!-- <div class="menu_icon" onclick="myFunction()">&#9776;</div> -->
 			<nav class="menu_nav" id="myMenu_nav">
 				<ul>
 					<li><a href="../index.html">Accueil</a></li>
@@ -28,9 +39,9 @@
 			<link rel="stylesheet" href="../css/style_contenu_1.css">
 			<nav class="menu_aside">
 				<ul>
-					<li><a class="table" href="#course">La course</a></li>
-					<li><a class="table" href="#bateau">Le bateau</a></li>
-					<li><a class="table" href="#participation">Ce qu'il faut faire avant</a></li>
+					<li style="margin-right: 8px;"><a class="table" href="#course">La course</a></li>
+					<li style="margin-right: 8px;"><a class="table" href="#bateau">Le bateau</a></li>
+					<li><a class="table" href="#participation">Préparation</a></li>
 				</ul>
 			</nav>
 			<!-- Les éléments de la partie aside -->
