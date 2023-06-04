@@ -1,0 +1,93 @@
+/* Style pour la page d'acceuil partie home seulement */
+/* Paramètres pour la page home */
+	.home{
+		text-align: center;
+		margin: 20px;
+	}
+
+	aside {
+		height: 0px;
+	}
+
+	/* Permet la rotation du logo publicité */
+	.rotation {
+		animation: rotate 1s linear;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes rotate {
+		0% {
+			transform: rotate(225deg);
+			opacity: 0;
+		}
+		100% {
+			transform: rotate(360deg);
+			opacity: 1;
+		}
+	}
+
+/********** FORMAT ORDINATEUR **********/
+@media (min-width: 1024px) {
+
+		/* Partie page home */
+		.acceuil img {
+			max-width: 800px;
+			height: auto;
+		}
+		/* Partie aside (logo rouge) */
+		.logo_rouge img {
+			max-width: 320px;
+			height: auto;
+		}
+
+		.logo_rouge img {
+			position: relative;
+			top: -32px;
+			right: -320px;
+			z-index: 1;
+		}
+}
+
+/********** FORMAT TABLETTE **********/
+@media (min-width: 768px) and (max-width: 1023px) {
+	
+	/* Partie page home */
+		.acceuil img {
+			max-width: 500px;
+			height: auto;
+		}
+		/* Partie aside (logo rouge) */
+		.logo_rouge img {
+			max-width: 200px;
+			height: auto;
+		}
+
+		.logo_rouge img {
+			position: relative;
+			top: -20px;
+			right: -200px;
+			z-index: 1;
+		}
+}
+
+/********** FORMAT TELEPHONES PORTABLE **********/
+@media (max-width: 767px) {
+
+		/* Partie page home */
+		.acceuil img {
+			max-width: 100%;
+			height: auto;
+		}
+		/* Partie aside (logo rouge) */
+		.logo_rouge img {
+			max-width: 35%;
+			height: auto;
+		}
+
+		.logo_rouge img {
+			position: relative;
+			top: 0%;
+			right: -38%;
+			z-index: 1;
+		}
+}

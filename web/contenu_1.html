@@ -8,23 +8,21 @@
 		<title>La mini transat</title>
 	</head>
 	<body>
-		<!-- En-tête avec le logo et le menu de navigation -->
-		<header>
+		<!-- En-tête de page -->
+		<header class="fixed-header">
+			<!-- Logo du menu -->
 			<table class="logo_menu">
 				<tr>
-				  <td>
-					<a href="../index.html"><img src="../pictures/logo-menu.png" alt="Logo menu"></a>
-				  </td>
-				  <td>
-					<div class="menu_icon" onclick="myFunction()">&#9776;</div>
-				  </td>
+					<td>
+						<a href="../index.html"><img src="../pictures/logo-menu.png" alt="Logo menu"></a>
+					</td>
+					<td>
+						<!-- L'icone pour le menu déroulant pour les résolutions d'écran <= 767px -->
+						<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+					</td>
 				</tr>
-			  </table>
-			<!-- <div class="logo_menu">
-				<a href="../index.html"><img src="../pictures/logo-menu.png" alt="Logo menu"></a>
-				<div class="menu_icon" onclick="myFunction()">&#9776;</div>
-			</div> -->
-			<!-- <div class="menu_icon" onclick="myFunction()">&#9776;</div> -->
+			</table>
+			<!-- Le menu -->
 			<nav class="menu_nav" id="myMenu_nav">
 				<ul>
 					<li><a href="../index.html">Accueil</a></li>
@@ -34,32 +32,34 @@
 					<li><a href="./contact.html">Contact</a></li>
 				</ul>
 			</nav>
-		</header>
-		<main>
 			<link rel="stylesheet" href="../css/style_contenu_1.css">
-			<nav class="menu_aside">
+			<!-- Menu navigation type ancrage -->
+			<nav class="menu_aside fixed-menu">
 				<ul>
 					<li style="margin-right: 8px;"><a class="table" href="#course">La course</a></li>
 					<li style="margin-right: 8px;"><a class="table" href="#bateau">Le bateau</a></li>
 					<li><a class="table" href="#participation">Préparation</a></li>
 				</ul>
 			</nav>
+		</header>
+
+		<!-- Corps de la page -->		
+		<main class="main-content">
 			<!-- Les éléments de la partie aside -->
 			<aside>
 				<!-- Mini Transat -->
 				<div class="mini_transat">
-					<h2 id="course">La mini transat c'est quoi ?</h2>
+					<h2 id="course">La course mini transat c'est quoi ?</h2>
 					<img src="../pictures/carte.png" alt="Carte Mini Transat">
-					<p><span class="font_caveat">6.5</span> taille en mètre des bateaux
-						<em>(c’est le plus petit voiliers de course au large)</em></p>
-						<p><span class="font_caveat">30</span> nombre de jours de navigation, 
-							sans moyen de communication avec la terre</p>
-						<p><span class="font_caveat">90</span> nombre de concurrents-es, 
-							professionnels- les et amateurs-trices provenant de plus de
-						12 pays différents</p>
-						<p><span class="font_caveat">7’500</span> distance à parcourir en km</p>
-						<p><span class="font_caveat">13'000'000</span> nombre de vue sur le site officiel de la course</p>
+					<table>
+						<tr><th>6.5</th><td>taille en mètre des bateaux <em>(c’est le plus petit voiliers de course au large)</em></td></tr>
+						<tr><th>30</th><td>nombre de jours de navigation, sans moyen de communication avec la terre</td></tr>
+						<tr><th>90</th><td>nombre de concurrents-es, professionnels-les et amateurs-trices provenant de plus de 12 pays différents</td></tr>
+						<tr><th>7'500</th><td>distance à parcourir en km</td></tr>
+						<tr><th>13'000'000</th><td>nombre de vue sur le site officiel de la course</td></tr>
+					</table>
 				</div>
+
 				<!-- Bateau -->
 				<div class="bateau">
 					<h2 id="bateau">Le bateau</h2>
@@ -69,34 +69,13 @@
 						<img src="../pictures/bateau_3.png" title="Le Paris-Texas 5" alt="Le Paris-Texas 5">
 					</div>
 					<table>
-						<tr>
-						  <th>Constructeur :</th>
-						  <td>FAGNANT-AMCO</td>
-						</tr>
-						<tr>
-						  <th>Architecte :</th>
-						  <td>JM FINOT</td>
-						</tr>
-						<tr>
-						  <th>Année const. :</th>
-						  <td>1991</td>
-						</tr>
-						<tr>
-						  <th>Matériaux :</th>
-						  <td>composite verre époxy</td>
-						</tr>
-						<tr>
-						  <th>Longueur HT :</th>
-						  <td>6.50 m</td>
-						</tr>
-						<tr>
-						  <th>Largeur :</th>
-						  <td>2.95 m</td>
-						</tr>
-						<tr>
-						  <th>Poids :</th>
-						  <td>~900 kg</td>
-						</tr>
+						<tr><th>Constructeur :</th><td>FAGNANT-AMCO</td></tr>
+						<tr><th>Architecte :</th><td>JM FINOT</td></tr>
+						<tr><th>Année const. :</th><td>1991</td></tr>
+						<tr><th>Matériaux :</th><td>composite verre époxy</td></tr>
+						<tr><th>Longueur HT :</th><td>6.50 m</td></tr>
+						<tr><th>Largeur :</th><td>2.95 m</td></tr>
+						<tr><th>Poids :</th><td>~900 kg</td></tr>
 					  </table>
 				</div>
 				<!-- Participation -->
@@ -187,18 +166,22 @@
 				</div>
 			</aside>
 		</main>
-		<!-- Le pied de page -->
+
+		<!-- Pied de page -->
 		<footer>
+			<!-- Menu de pied de page -->
 			<nav>
 				<ul>
-					<li><a href="./impressum.html">Impressum</a></li>
+					<li><a href="./web/impressum.html">Impressum</a></li>
 					<li><a href="mailto:contact@association-talen.ch">Contact Webmaster</a></li>
-					<li><a href="./conditions.html">Conditions d'utilisation</a></li>
-					<li><a href="./protection.html">Protection des données</a></li>
+					<li><a href="./web/conditions.html">Conditions d'utilisation</a></li>
+					<li><a href="./web/protection.html">Protection des données</a></li>
 				</ul>
 				<p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
 			</nav>
 		</footer>
+
+		<!-- Script en JS pour le menu déroulant -->
 		<script>
 			function myFunction() {
 				var x = document.getElementById("myMenu_nav");

@@ -1,279 +1,371 @@
-/* La partie menu de l'aside */
-.menu_aside {
-	text-align: center;
-}
+/* Style css de la page contenu_1 */
 
-.menu_aside li {
-	display: inline-block;
-	position: relative;
-}
-
-.menu_aside li {
-	padding: 10px 20px 10px 20px;
-	background-color: #57788C;
-	border-radius: 20px;
-	margin-right: 10px;
-}
-
-.menu_aside a {
-	text-decoration: none;
-	font-weight: bold;
-	color: #091723;
-	font-size: 15px;
-}
-
-/* La partie aside */
-aside {
-	max-width: 1040px;
-	height: 800px;
-	display: block;
-	/* text-align: justify; */
-	overflow: auto;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: auto;
-	background-color: rgba(255, 255, 255, 0.55);
-	box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 767px) {
-    aside {
-      max-width: 90%;
-      height: 400px;
-      padding: 10px;
-    }
-
-	aside h2 {
-		font-size: 20px;
+/* Paramètres générals du tableau dans participation */
+	.participation table {
+		border-collapse: collapse;
+		width: auto;
+		border: 2px solid white;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin: auto;
 	}
 
+	.participation table {
+		margin-bottom: 50px;
+		margin-top: 50px;
+	}
+
+	.participation th,
+	.participation td {
+		padding: 8px;
+		text-align: center;
+		border-bottom: 2px solid white;
+		border-right: 2px solid white;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.participation th {
+		background-color: #57788C;
+		color: white;
+		vertical-align: middle;
+	}
+
+	.participation tr:nth-child(even) {
+		background-color: rgb(188, 216, 237, 0.5);
+	}
+
+	.participation tr:nth-child(odd) {
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+
+	.participation tr:last-child td {
+		border-bottom: none;
+	}
+
+	.participation td:first-child {
+		border-left: 1px solid white;
+	}
+
+	.participation td:last-child {
+		border-right: none;
+	}
+
+	.participation tr:first-child th:first-child {
+		border-top-left-radius: 5px;
+	}
+
+	.participation tr:first-child th:last-child {
+		border-top-right-radius: 5px;
+		border-right: none;
+	}
+
+	.participation tr:last-child td:first-child {
+		border-bottom-left-radius: 5px;
+	}
+
+	.participation tr:last-child td:last-child {
+		border-bottom-right-radius: 5px;
+	}
+
+/********** FORMAT ORDINATEUR **********/
+@media (min-width: 1024px) {
+	/* La partie aside */
+		aside {
+			max-width: 1040px;
+			height: 680px;
+			display: block;
+			overflow: auto;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin: 0 30px 0 30px;
+			background-color: rgba(255, 255, 255, 0.55);
+			box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.5);
+		}
+	/* La partie menu de l'aside */
+		.menu_aside {
+			text-align: center;
+		}
+
+		.menu_aside ul {
+			margin: 0px;
+			margin-bottom: 30px;
+		}
+
+		.menu_aside li {
+			padding: 10px 20px 10px 20px;
+			background-color: #57788C;
+			box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.5);
+			border-radius: 20px;
+			margin-right: 10px;
+			display: inline-block;
+			position: relative;
+		}
+
+		.menu_aside a {
+			text-decoration: none;
+			font-weight: bold;
+			color: #091723;
+			font-size: 15px;
+		}
+
+	/* La course */
+		.mini_transat h2 {
+			margin: 0 0 20px 10px;
+			padding-top: 10px;
+		}
+
+		.mini_transat img {
+			width: 100%;
+			max-width: 800px;
+			height: auto;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.mini_transat table {
+			border-collapse: collapse;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.mini_transat th {
+			text-align: right;
+			vertical-align: middle;
+			font-family: 'caveat-regular';
+			font-size: 35px;
+			font-weight: bold;
+		}
+
+		.mini_transat td {
+			text-align: left;
+			vertical-align: middle;
+			padding-left: 20px;
+		}
+
+	/* La bateau */
+		.bateau h2 {
+			margin: 50px 0 20px 10px;
+			padding-top: 10px;
+		}
+
+		.photo_bateau {
+			display: flex;
+			justify-content: center;
+			position: relative;
+			padding-bottom: 10px;
+		}
+
+		.photo_bateau img {
+			width: 36%;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.photo_bateau img:nth-child(2) {
+			margin-left: -70px;
+			position: relative;
+			z-index: 2;
+			top: 40px;
+		}
+
+		.photo_bateau img:nth-child(3) {
+			margin-left: -60px;
+			position: relative;
+			z-index: 1;
+		}
+
+		.bateau table {
+			width: auto;
+		}
+
+		.bateau th:first-child {
+			width: 150px;
+		}
+
+		.bateau th, td {
+			text-align: left;
+			vertical-align: top;
+			padding-bottom: 5px;
+		}
+
+		.bateau table {
+			margin: 0 20px 0 20px;
+
+		}
+
+	/* Participation */
+		.participation h2 {
+			margin: 50px 0 20px 10px;
+			padding-top: 10px;
+		}
+
+		.participation p, li {
+			margin: 0 20px 0 20px;
+			line-height: 25px;
+		}
+}
+
+/********** FORMAT TABLETTE **********/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+	/* La partie aside */
+	aside {
+		max-width: auto;
+		height: 680px;
+		display: block;
+		overflow: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: 30px 30px 0 30px;
+		background-color: rgba(255, 255, 255, 0.55);
+		box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.5);
+	}
+
+	/* La partie menu de l'aside */
 	.menu_aside {
-		padding-bottom: 20px;
+		text-align: center;
 	}
 
 	.menu_aside ul {
-		margin: 0px;
-		padding: 0px;
+		padding: 0;
+		margin: 15px 0 0 0;
+		margin-bottom: 20px;
 	}
 
 	.menu_aside li {
-		display: inline-block;
-		margin: 0px;
-		padding: 5px 10px 5px 10px;
+		padding: 10px 20px 10px 20px;
 		background-color: #57788C;
+		box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.5);
 		border-radius: 20px;
+		margin-right: 10px;
+		display: inline-block;
+		position: relative;
 	}
-	
+
 	.menu_aside a {
-		font-size: 13px;
+		text-decoration: none;
+		font-weight: bold;
+		color: #091723;
+		font-size: 15px;
 	}
-  }
 
-/* Paramètres pour la course */
-.mini_transat h2 {
-	margin-left: 10px;
-	padding-top: 10px;
-}
+	/* La course */
+	.mini_transat h2 {
+		margin: 0 0 20px 10px;
+		padding-top: 10px;
+	}
 
-.mini_transat img {
-	width: 100%;
-	max-width: 800px;
-	height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.mini_transat p {
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-.font_caveat {
-	font-family: 'caveat-regular';
-	font-size: 35px;
-	font-weight: bold;
-}
-
-
-/* Paramètres pour le bateau */
-.bateau h2 {
-	margin-left: 10px;
-	margin-top: 50px;
-	padding-top: 10px;
-}
-
-.bateau table {
-    width: auto;
-  }
-
-.bateau th:first-child {
-    width: 150px;
-  }
-
-.bateau th, td {
-	text-align: left;
-	vertical-align: top;
-	padding-bottom: 5px;
-}
-
-.bateau table {
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-@media (min-width: 1024px) {
-	.photo_bateau {
-		display: flex;
-		justify-content: center;
-		position: relative;
-		padding-bottom: 10px;
-	  }
-	
-	  .photo_bateau img {
-		width: 36%;
-		max-width: 100%;
+	.mini_transat img {
+		width: 100%;
+		max-width: 800px;
 		height: auto;
-	  }
-	
-	  .photo_bateau img:nth-child(2) {
-		margin-left: -70px;
-		position: relative;
-		z-index: 2;
-		top: 40px;
-	  }
-	
-	  .photo_bateau img:nth-child(3) {
-		margin-left: -60px;
-		position: relative;
-		z-index: 1;
-	  }
-}
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-@media (min-width: 768px) and (max-width: 1023px) {
+	.mini_transat table {
+		border-collapse: collapse;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.mini_transat th {
+		text-align: right;
+		vertical-align: middle;
+		font-family: 'caveat-regular';
+		font-size: 35px;
+		font-weight: bold;
+	}
+
+	.mini_transat td {
+		text-align: left;
+		vertical-align: middle;
+		padding-left: 20px;
+	}
+	/* Le bateau */
 	.photo_bateau {
 		display: flex;
 		justify-content: center;
 		position: relative;
 		padding-bottom: 50px;
-	  }
+	}
 	
-	  .photo_bateau img {
+	.photo_bateau img {
 		width: 33.33%;
 		max-width: 100%;
 		height: auto;
-	  }
+	}
 	
-	  .photo_bateau img:nth-child(2) {
+	.photo_bateau img:nth-child(2) {
 		margin-left: -70px;
 		position: relative;
 		z-index: 2;
 		top: 40px;
-	  }
+	}
 	
-	  .photo_bateau img:nth-child(3) {
+	.photo_bateau img:nth-child(3) {
 		margin-left: -60px;
 		position: relative;
 		z-index: 1;
-	  }
+	}
 }
 
+/********** FORMAT TELEPHONES PORTABLE **********/
 @media (max-width: 767px) {
+	aside {
+		max-width: 90%;
+		height: 450px;
+		padding: 10px;
+	}
+  
+	aside h2 {
+		  font-size: 20px;
+	}
+  
+	.menu_aside {
+		  padding-bottom: 20px;
+	}
+  
+	.menu_aside ul {
+		  margin: 0px;
+		  padding: 0px;
+	}
+  
+	.menu_aside li {
+		  display: inline-block;
+		  margin: 0px;
+		  padding: 5px 10px 5px 10px;
+		  background-color: #57788C;
+		  border-radius: 20px;
+	}
+	  
+	.menu_aside a {
+		  font-size: 13px;
+	}
+
+	  /* Le bateau */
 	.photo_bateau {
 		justify-content: center;
 		padding-bottom: 20px;
 		margin-left: 20px;
 		margin-right: 20px;
-	  }
+	}
 	.photo_bateau img {
 		margin-bottom: 20px;
 	}
-}
 
-/* Ce qu'il faut faire */
-.participation h2 {
-	margin-left: 10px;
-	margin-top: 50px;
-	padding-top: 10px;
-}
-
-.participation p, li {
-	margin-left: 20px;
-	margin-right: 20px;
-	line-height: 25px;
-}
-
-/* Paramètres du tableau */
-.participation table {
-    border-collapse: collapse;
-    width: auto;
-    border: 2px solid white;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin: auto;
-  }
-
-  .participation th,
-  .participation td {
-    padding: 8px;
-    text-align: center;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
-	text-align: center;
-	vertical-align: middle;
-  }
-
-  .participation th {
-    background-color: #57788C;
-    color: white;
-    vertical-align: middle;
-  }
-
-  .participation tr:nth-child(even) {
-    background-color: rgb(188, 216, 237, 0.5);
-  }
-
-  .participation tr:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-
-  .participation tr:last-child td {
-    border-bottom: none;
-  }
-
-  .participation td:first-child {
-    border-left: 1px solid white;
-  }
-
-  .participation td:last-child {
-    border-right: none;
-  }
-
-  .participation tr:first-child th:first-child {
-    border-top-left-radius: 5px;
-  }
-
-  .participation tr:first-child th:last-child {
-    border-top-right-radius: 5px;
-    border-right: none;
-  }
-
-  .participation tr:last-child td:first-child {
-    border-bottom-left-radius: 5px;
-  }
-
-  .participation tr:last-child td:last-child {
-    border-bottom-right-radius: 5px;
-  }
-
-  .participation table {
-	margin-bottom: 50px;
-	margin-top: 50px;
-  }
-
-  @media (max-width: 767px) {
+	/* Participation */
 	.participation th,
-    .participation td {
-    	font-size: 8px;
-    }
-  }
+	.participation td {
+		font-size: 11px;
+	}
+
+	.participation table {
+		margin-bottom: 20px;
+		margin-top: 20px;
+		width: auto;
+	}
+}

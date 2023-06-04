@@ -1,357 +1,351 @@
 /* Police d'écriture supplémentaire */
-@font-face {
-	font-family: 'teko-semibold';
-	src: url('../font/teko-semibold-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'caveat-regular';
-	src: url('../font/caveat-regular-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* Corps de la page */
-body {
-	font-family: 'Verdana';
-	background-image: url("../pictures/background.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-.accueil{
-	text-align: center;
-	margin: 20px;
-}
-
-main img {
-	max-width: 500px;
-	height: auto;
-}
-
-/* Partie aside (logo rouge) */
-.logo_rouge img {
-	max-height: 400px;
-	width: auto;
-}
-
-@keyframes rotate {
-	0% {
-		transform: rotate(225deg);
-		opacity: 0;
+	@font-face {
+		font-family: 'teko-semibold';
+		src: url('../font/teko-semibold-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
 	}
-	100% {
-		transform: rotate(360deg);
-		opacity: 1;
+
+	@font-face {
+		font-family: 'caveat-regular';
+		src: url('../font/caveat-regular-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
 	}
-}
 
-.rotation {
-	animation: rotate 1s linear;
-	animation-fill-mode: forwards;
-}
+/* Paramètres général de body */
+	body {
+		font-family: 'Verdana';
+		background-image: url("../pictures/background.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position-x: left;
+		background-position-y: top;
+	}
 
-/* FORMAT ORDINATEUR */
+/********** FORMAT ORDINATEUR **********/
 @media (min-width: 1024px) {
 	/* Logo */
-	.logo_menu {
-		text-align: center;
-		margin-top: 50px;
-	}
+		.logo_menu {
+			margin-top: 30px;
+			width: 100%;
+			table-layout: fixed;
+		}
 
-	.logo_menu img {
-		width: 250px;
-	}
+		.logo_menu td:first-child {
+			width: auto;
+			text-align: center;
+			padding-left: 40px;
+		}
+
+		.logo_menu td:last-child {
+			width: 40px;
+			text-align: center;
+			padding: 0;
+		}
+
+		.logo_menu img {
+			width: 250px;
+		}
 
 	/* Menu pour les ordinateurs */
-	.menu_nav {
-		text-align: center;
-		font-family: 'Teko-semibold';
-		font-size: 25px;
-		list-style-type: none;
-		text-transform: uppercase;
-	}
+		.menu_nav {
+			text-align: center;
+			font-family: 'Teko-semibold';
+			font-size: 25px;
+			list-style-type: none;
+			text-transform: uppercase;
+		}
+		/* l'icone burger ne s'affiche pas */
+		.menu_icon {
+			display: none;
+		}
 
-	.menu_nav li {
-		display: inline-block;
-		margin-right: 25px;
-		position: relative;
-	}
+		.menu_nav ul {
+			margin: 0px;
+			margin-bottom: 30px;
+		}
 
-	.menu_nav a {
-		text-decoration: none;
-		color: #091723;
-	}
-
-	.menu_nav a:hover { /* couleur du texte au survole avec la souris */
-		color: #57788C; 
-	}
-
-	.menu_nav a.active { /* couleur du texte de la page active */
-		color: #D8AE44;
-	}
-
-	/* l'icone burger du menu ne s'affiche pas quand c'est un grand écran */
-	.menu_icon {
-		display: none;
-	}
-
+		.menu_nav li {
+			display: inline-block;
+			margin-right: 25px;
+			position: relative;
+		}
+		/* Couleur de base */
+		#myMenu_nav a {
+			text-decoration: none;
+			color: #091723;
+		}
+		/* Couleur au survol */
+		#myMenu_nav a:hover {
+			color: #57788C;
+		}
+		/* Couleur page active */
+		#myMenu_nav a.active {
+			color: #D8AE44;
+		}
+		
 	/* Menu en pied de page pour les ordinateurs */
 
-	footer nav {
-		text-align: center;
-		list-style-type: none;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
+		footer nav {
+			text-align: center;
+			list-style-type: none;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 
-	footer ul, p {
-		padding: 0px;
-		margin: 0px;
-	}
+		footer ul, p {
+			padding: 0px;
+			margin: 0px;
+		}
 
-	footer p {
-		margin-top: 15px;
-		color: rgb(188, 216, 237);
-	}
+		footer p {
+			margin-top: 15px;
+			color: rgb(188, 216, 237);
+		}
 
-	footer li {
-		display: inline-block;
-		position: relative;
-	}
+		footer li {
+			display: inline-block;
+			position: relative;
+			margin: 0px;
+		}
 
-	footer li:not(:first-child)::before {
-		content: "|";
-		position: relative;
-		top: 2px;
-		margin: 0;
-		padding-left: 11px;
-		padding-right: 11px;
-		font-size: 20px;
-		color: rgb(188, 216, 237);
-	}
+		footer li:not(:first-child)::before {
+			content: "|";
+			position: relative;
+			top: 2px;
+			margin: 0;
+			padding-left: 11px;
+			padding-right: 11px;
+			font-size: 20px;
+			color: rgb(188, 216, 237);
+		}
 
-	footer a {
-		text-decoration: none;
-		font-weight: bold;
-		color: rgb(188, 216, 237);
-		font-size: 15px;
-	}
+		footer a {
+			text-decoration: none;
+			font-weight: bold;
+			color: rgb(188, 216, 237);
+			font-size: 15px;
+		}
 }
 
-/* FORMAT TABLETTE */
+/********** FORMAT TABLETTE **********/
 @media (min-width: 768px) and (max-width: 1023px) {
-	.logo_menu {
-		text-align: center;
-		margin-top: 50px;
-	}
-	.logo_menu img {
-		text-align: center;
-		width: 150px;
-	}
+	/* Logo */
+		.logo_menu {
+			margin-top: 20px;
+			width: 100%;
+			table-layout: fixed;
+		}
+
+		.logo_menu td:first-child {
+			width: auto;
+			text-align: center;
+			padding-left: 40px;
+		}
+
+		.logo_menu td:last-child {
+			width: 40px;
+			text-align: center;
+			padding: 0;
+		}
+
+		.logo_menu img {
+			width: 200px;
+		}
 
 	/* Menu pour les tablettes */
-	.menu_nav {
-		display: none; /* Pour faire disparaite le texte du menu déroulant */
-	}
+		/* Pour faire disparaite le texte du menu déroulant */
+		.menu_nav {
+			display: none;
+		}
+		/* L'icone du menu burger */
+		.menu_icon {
+			font-size: 30px;
+			cursor: pointer;
+		}
+		/* Le menu déroulant */
+		#myMenu_nav.responsive {
+			display: block;
+			position: fixed;
+			top: 80px;
+			right: 0;
+			z-index: 999;
+			transform: translateX(0);
+		}
+		
+		#myMenu_nav ul{
+			font-family: 'Teko-semibold';
+			font-size: 20px;
+			text-transform: uppercase;
+			text-align: right;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			margin: 0px;
+		}
 
-	.menu_icon {
-		font-size: 30px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 10px;
-		cursor: pointer;
-	}
-
-	#myMenu_nav.responsive {
-		display: block;
-	}
-
-	#myMenu_nav ul{
-		font-family: 'Teko-semibold';
-		font-size: 20px;
-		text-transform: uppercase;
-		text-align: center;
-		padding: 0px;
-		background-color: rgba(255, 255, 255, 0.5);
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	#myMenu_nav li {
-  		list-style-type: none;
-	}
-
-	#myMenu_nav a {
-		text-decoration: none;
-		color: #091723;
-	}
-
-	#myMenu_nav a:hover {
-		color: #57788C;
-	}
-
-	#myMenu_nav a.active {
-		color: #D8AE44;
-	}
+		#myMenu_nav li {
+			list-style-type: none;
+		}
+		/* Couleur de base */
+		#myMenu_nav a {
+			text-decoration: none;
+			color: #091723;
+		}
+		/* Couleur au survol */
+		#myMenu_nav a:hover {
+			color: #57788C;
+		}
+		/* Couleur page active */
+		#myMenu_nav a.active {
+			color: #D8AE44;
+		}
 
 	/* Menu en pied de page pour les tablettes */
 
-	footer nav {
-		text-align: center;
-		list-style-type: none;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
+		footer nav {
+			text-align: center;
+			list-style-type: none;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 
-	footer ul, p {
-		padding: 0px;
-		margin: 0px;
-	}
+		footer ul, p {
+			padding: 0px;
+			margin: 0px;
+		}
 
-	footer p {
-		margin-top: 15px;
-		color: rgb(188, 216, 237);
-	}
+		footer li {
+			display: inline-block;
+			position: relative;
+		}
 
-	footer li {
-		display: inline-block;
-		position: relative;
-	}
+		footer p {
+			margin-top: 15px;
+			color: rgb(188, 216, 237);
+			font-size: 12px;
+		}
 
-	footer li:not(:first-child)::before {
-		content: "|";
-		position: relative;
-		top: 2px;
-		margin: 0;
-		padding-left: 11px;
-		padding-right: 11px;
-		font-size: 20px;
-		color: rgb(188, 216, 237);
-	}
+		footer a {
+			text-decoration: none;
+			font-weight: bold;
+			color: rgb(188, 216, 237);
+			font-size: 12px;
+		}
 
-	footer a {
-		text-decoration: none;
-		font-weight: bold;
-		color: rgb(188, 216, 237);
-		font-size: 15px;
-	}
+		footer li:not(:first-child)::before {
+			content: "|";
+			position: relative;
+			top: 2px;
+			margin: 0;
+			padding-left: 0px;
+			padding-right: 6px;
+			font-size: 18px;
+			color: rgb(188, 216, 237);
+		}
 }
 
-/* FORMAT TELEPHONES PORTABLE */
+/********** FORMAT TELEPHONES PORTABLE **********/
 @media (max-width: 767px) {
-	.logo_menu {
-		width: 100%;
-		table-layout: fixed;
-	  }
-	
-	.logo_menu tr img {
-	}
+	/* Logo */
+		.logo_menu {
+			width: 100%;
+			table-layout: fixed;
+		}
 
-	.logo_menu td:first-child {
-        width: auto;
-		text-align: center;
-		padding-left: 40px;
+		.logo_menu td:first-child {
+			width: auto;
+			text-align: center;
+			padding-left: 40px;
+		}
 
-    }
+		.logo_menu td:last-child {
+			width: 40px;
+			text-align: center;
+			padding: 0;
+		}
 
-	.logo_menu td:last-child {
-        width: 40px;
-		text-align: center;
-		padding: 0;
-    }
-		  
-	.logo_menu img {
-		width: 150px;
-	}
-
-	main img {
-		max-width: 100%;
-		height: auto;
-	}
-	
-	/* Partie aside (logo rouge) */
-	.logo_rouge img {
-		max-height: 100%;
-		width: auto;
-	}
+		.logo_menu img {
+			width: 150px;
+		}
 
 	/* Menu pour les téléphones portable */
-	.menu_nav {
-		display: none; /* Pour faire disparaite le texte du menu déroulant */
-	}
+		/* Pour faire disparaite le texte du menu déroulant */
+		.menu_nav {
+			display: none;
+		}
+		/* L'icone du menu burger */
+		.menu_icon {
+			font-size: 30px;
+			cursor: pointer;
+		}
+		/* Le menu déroulant */
+		#myMenu_nav.responsive {
+			display: block;
+			position: fixed;
+			top: 50px;
+			right: 0px;
+			z-index: 999;
+			transform: translateX(0);
+		}
+		
+		#myMenu_nav ul{
+			font-family: 'Teko-semibold';
+			font-size: 20px;
+			text-transform: uppercase;
+			text-align: right;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			margin: 0px;
+		}
 
-	.menu_icon {
-		font-size: 30px;
-		cursor: pointer;
-	}
+		#myMenu_nav li {
+			list-style-type: none;
+		}
+		/* Couleur de base */
+		#myMenu_nav a {
+			text-decoration: none;
+			color: #091723;
+		}
+		/* Couleur au survol */
+		#myMenu_nav a:hover {
+			color: #57788C;
+		}
+		/* Couleur page active */
+		#myMenu_nav a.active {
+			color: #D8AE44;
+		}
 
-	#myMenu_nav.responsive {
-		display: block;
-	}
-
-	#myMenu_nav ul{
-		font-family: 'Teko-semibold';
-		font-size: 20px;
-		text-transform: uppercase;
-		text-align: right;
-		padding: 0px;
-		background-color: rgba(255, 255, 255, 0.5);
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	#myMenu_nav li {
-  		list-style-type: none;
-	}
-
-	#myMenu_nav a {
-		text-decoration: none;
-		color: #091723;
-	}
-
-	#myMenu_nav a:hover {
-		color: #57788C;
-	}
-
-	#myMenu_nav a.active {
-		color: #D8AE44;
-	}
-
-	/* Menu en pied de page pour les téléphones portable */
+	/* Pied de page pour les téléphones portable */
 	
-	footer nav {
-		text-align: center;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
+		footer nav {
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 5px;
+			font-size: 12px;
+		}
 
-	footer ul, p {
-		padding: 0px;
-		margin: 0px;
-	}
+		footer ul, p {
+			padding: 0px;
+			margin: 0px;
+		}
 
-	footer li {
-		list-style-type: none;
-		display: block;
-		position: relative;
-		margin-bottom: 2px;
-	}
+		footer li {
+			list-style-type: none;
+			display: block;
+			position: relative;
+			line-height: 17px;
+		}
 
-	footer p {
-		margin-top: 15px;
-		color: rgb(188, 216, 237);
-	}
+		footer p {
+			margin-top: 5px;
+			color: rgb(188, 216, 237);
+		}
 
-	footer a {
-		text-decoration: none;
-		font-weight: bold;
-		color: rgb(188, 216, 237);
-		font-size: 15px;
-	}
+		footer a {
+			text-decoration: none;
+			font-weight: bold;
+			color: rgb(188, 216, 237);
+		}
 }
-

@@ -8,12 +8,22 @@
 		<title>Association Talent</title>
 	</head>
 	<body>
-		<!-- En-tête avec le logo et le menu de navigation -->
+
+		<!-- En-tête de page -->
 		<header>
-			<div class="logo_menu">
-				<a href="./index.html"><img src="./pictures/logo-menu.png" alt="Logo menu"></a>
-			</div>
-			<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+			<!-- Logo du menu -->
+			<table class="logo_menu">
+				<tr>
+					<td>
+						<a href="./index.html"><img src="./pictures/logo-menu.png" alt="Logo menu"></a>
+					</td>
+					<td>
+						<!-- L'icone pour le menu déroulant pour les résolutions d'écran <= 767px -->
+						<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+					</td>
+				</tr>
+			</table>
+			<!-- Le menu -->
 			<nav class="menu_nav" id="myMenu_nav">
 				<ul>
 					<li><a href="./index.html" class="active">Accueil</a></li>
@@ -22,23 +32,28 @@
 					<li><a href="./web/page_perso.html">L'association</a></li>
 					<li><a href="./web/contact.html">Contact</a></li>
 				</ul>
-				<!-- Le bouton responsive du menu de navigation -->
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				</a>
 			</nav>
 		</header>
 
 		<!-- Corps de la page -->
-		<main class="accueil">
-			<!-- Contenu de la page d'accueil -->
-			<h1>Bienvenue !</h1>
-			<img src="./pictures/logo_acceuil.png" alt="talent">
-			<aside class="logo_rouge">
-				<img src="./pictures/mini-transat.png" alt="mini-transat" class="rotation">
-			</aside>
+		<main class="home">
+			<link rel="stylesheet" href="./css/style_home.css">
+			<!-- Contenu de la page home -->
+			<div class="acceuil">
+				<h1>Bienvenue !</h1>
+				<!-- Publicité pour promouvoir la Mini-Transat -->
+				<aside class="logo_rouge">
+					<a href="https://www.classemini.com/course-fr-mini-transat-2023-1.html">
+						<img class="rotation" src="./pictures/mini-transat.png" alt="Mini Transat" title="Mini Transat">
+					</a>
+				</aside>
+				<img src="./pictures/logo_acceuil.png" alt="Talent" title="Talent">
+			</div>
 		</main>
+
 		<!-- Pied de page -->
 		<footer>
+			<!-- Menu de pied de page -->
 			<nav>
 				<ul>
 					<li><a href="./web/impressum.html">Impressum</a></li>
@@ -49,6 +64,8 @@
 				<p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
 			</nav>
 		</footer>
+
+		<!-- Script en JS pour le menu déroulant -->
 		<script>
 			function myFunction() {
 				var x = document.getElementById("myMenu_nav");
