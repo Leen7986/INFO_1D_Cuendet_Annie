@@ -8,10 +8,9 @@
 		<title>Martial Cuendet</title>
 	</head>
 	<body>
-
 		<!-- En-tête de page -->
 		<header>
-			<!-- Logo du menu -->
+			<!-- Logo Talent du menu -->
 			<table class="logo_menu">
 				<tr>
 					<td>
@@ -19,11 +18,11 @@
 					</td>
 					<td>
 						<!-- L'icone pour le menu déroulant pour les résolutions d'écran <= 767px -->
-						<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+						<div class="menu_icon" onClick="menuBurger()">&#9776;</div>
 					</td>
 				</tr>
 			</table>
-			<!-- Le menu -->
+			<!-- Le menu avec les 5 pages -->
 			<nav class="menu_nav" id="myMenu_nav">
 				<ul>
 					<li><a href="../index.html">Accueil</a></li>
@@ -33,23 +32,26 @@
 					<li><a href="./contact.html">Contact</a></li>
 				</ul>
 			</nav>
+			<!-- Le menu de navigation dans la page -->
+			<link rel="stylesheet" href="../css/style_contenu_2.css">
+			<!-- Menu navigation type ancrage -->
+			<nav class="menu_aside">
+				<ul>
+					<li style="margin-right: 8px;"><a class="table" href="#skippeur">Le skippeur</a></li>
+					<li style="margin-right: 8px;"><a class="table" href="#photos">Photos</a></li>
+					<li><a class="table" href="#video">Vidéo</a></li>
+				</ul>
+			</nav>
 		</header>
-
 		<!-- Corps de la page -->		
 		<main>
-			<link rel="stylesheet" href="../css/style_contenu_2.css">
-			<!-- Le menu de navigation dans la page -->
-			<nav class="menu_aside">
-				<h2 id="table">Thèmes :</h2>
-				<p><a class="table" href="#skippeur">Le skippeur</a></p>
-				<p><a class="table" href="#photos">Photos</a></p>
-				<p><a class="table" href="#video">Vidéo</a></p>
-			</nav>
-			<!-- Les éléments de la page -->
+
+			<!-- Les éléments de la partie aside -->
 			<aside>
-				<h2 id="skippeur">Marial Cuendet - Le skippeur</h2>
-				<img src="../pictures/martial_1.png" alt="Martial" title="Martial">
-				<p>PRÉNOM : Martial
+				<div class="skippeur">
+					<h2 id="skippeur">Marial Cuendet - Le skippeur</h2>
+					<img src="../pictures/martial_1.png" alt="Martial" title="Martial">
+					<p>PRÉNOM : Martial
 					NOM : Cuendet
 					NÉ LE : 18 avril 1968, aux Charbonnières
 					Pour Martial, l’amour du sport est né à l'âge de 8 ans, en adhérant au ski club du Lieu en ski de fond.
@@ -64,17 +66,21 @@
 					• Ainsi que plusieurs titres régionaux
 					Autres :
 					• 1 patrouille des glaciers
-					• 1 raid Lausanne-Lillehamer en 5 jours</p>
-
-				<h2 id="photos">Quelques photos de Martial</h2>
-				<img src="../pictures/martial_2.jpg" alt="Martial" title="Martial">
-				<img src="../pictures/martial_3.jpg" alt="Martial" title="Martial">
-				<img src="../pictures/martial_4.jpg" alt="Martial" title="Martial">
-
-				<h2 id="video">Reportage de la Télé</h2>
-				<video controls>
-					<source src="../videos/martial_la_tele_22.12.2021.mp4" type="video/mp4">
-				</video>
+					• 1 raid Lausanne-Lillehamer en 5 jours
+					</p>
+				</div>
+				<div class="photos">
+					<h2 id="photos">Quelques photos de Martial</h2>
+					<img src="../pictures/martial_2.jpg" alt="Martial" title="Martial">
+					<img src="../pictures/martial_3.jpg" alt="Martial" title="Martial">
+					<img src="../pictures/martial_4.jpg" alt="Martial" title="Martial">
+				</div>
+				<div class="video">
+					<h2 id="video">Reportage de la Télé</h2>
+					<video controls>
+						<source src="../videos/martial_la_tele_22.12.2021.mp4" type="video/mp4">
+					</video>
+				</div>
 			</aside>
 		</main>
 
@@ -92,16 +98,7 @@
 			</nav>
 		</footer>
 
-		<!-- Script en JS pour le menu déroulant -->
-		<script>
-			function myFunction() {
-				var x = document.getElementById("myMenu_nav");
-				if(x.className === "menu_nav") {
-					x.className += " responsive";
-				} else {
-					x.className = "menu_nav";
-				}
-			}
-		</script>
+		<!-- Script en JS pour le menu déroulant dans la version mobile du site -->
+		<script src="../scripts/menuburgeur.js" ></script> 
 	</body>
 </html>

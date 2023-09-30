@@ -8,10 +8,9 @@
 		<title>Association Talent</title>
 	</head>
 	<body>
-
 		<!-- En-tête de page -->
 		<header>
-			<!-- Logo du menu -->
+			<!-- Logo Talent du menu -->
 			<table class="logo_menu">
 				<tr>
 					<td>
@@ -19,11 +18,11 @@
 					</td>
 					<td>
 						<!-- L'icone pour le menu déroulant pour les résolutions d'écran <= 767px -->
-						<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+						<div class="menu_icon" onClick="menuBurger()">&#9776;</div>
 					</td>
 				</tr>
 			</table>
-			<!-- Le menu -->
+			<!-- Le menu avec les 5 pages -->
 			<nav class="menu_nav" id="myMenu_nav">
 				<ul>
 					<li><a href="./index.html" class="active">Accueil</a></li>
@@ -34,11 +33,10 @@
 				</ul>
 			</nav>
 		</header>
-
 		<!-- Corps de la page -->
 		<main class="home">
 			<link rel="stylesheet" href="./css/style_home.css">
-			<!-- Contenu de la page home -->
+			<!-- Contenu de la page accueil -->
 			<div class="acceuil">
 				<h1>Bienvenue !</h1>
 				<!-- Publicité pour promouvoir la Mini-Transat -->
@@ -47,6 +45,7 @@
 						<img class="rotation" src="./pictures/mini-transat.png" alt="Mini Transat" title="Mini Transat">
 					</a>
 				</aside>
+				<!-- Image de la page d'accueil -->
 				<img src="./pictures/logo_acceuil.png" alt="Talent" title="Talent">
 			</div>
 		</main>
@@ -65,16 +64,7 @@
 			</nav>
 		</footer>
 
-		<!-- Script en JS pour le menu déroulant -->
-		<script>
-			function myFunction() {
-				var x = document.getElementById("myMenu_nav");
-				if(x.className === "menu_nav") {
-					x.className += " responsive";
-				} else {
-					x.className = "menu_nav";
-				}
-			}
-		</script>
+		<!-- Script en JS pour le menu déroulant dans la version mobile du site -->
+		<script src="scripts/menuburgeur.js" ></script> 
 	</body>
 </html>

@@ -1,20 +1,88 @@
-.menu_aside {
-	float: left;
-	border: 1px solid black;
-	width: 210px;
-	height: 500px;
-	padding-left: 10px;
-	padding-right: 10px;
-	font-size: 15px;
+/* Feuille de style pour la page contenu_2 - Martial Cuendet */
+
+/********** FORMAT GENERALE **********/
+	/* La partie aside */
+		aside {
+			display: block;
+			overflow: auto;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin: 0 auto 0 auto;
+			background-color: rgba(255, 255, 255, 0.55);
+			box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.5);
+		}
+		/* La partie menu de l'aside */
+		.menu_aside {
+			text-align: center;
+		}
+
+		.menu_aside ul {
+			padding: 0px;
+			margin: 10px 0px 20px 0px;
+		}
+
+		.menu_aside li {
+			padding: 10px 20px 10px 20px;
+			background-color: #57788C;
+			box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.5);
+			border-radius: 20px;
+			margin-right: 10px;
+			display: inline-block;
+			position: relative;
+		}
+
+		.menu_aside a {
+			text-decoration: none;
+			font-weight: bold;
+			color: #091723;
+			font-size: 15px;
+		}
+
+/********** FORMAT ORDINATEUR **********/
+@media (min-width: 1024px) {
+	/* La partie aside */
+	aside {
+		max-width: 1040px;
+		height: 680px;
+		margin: 0 auto 0 auto;
+	}
+
+	/* Le skippeur */
+		
+	/* Photos */
+		
+	/* Vidéo */
+
 }
 
-aside {
-	display: block;
-	border: 1px solid black;
-	height: 500px;
-	margin-left: 240px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: justify;
-	overflow: scroll;
+/********** FORMAT TABLETTE **********/
+@media (min-width: 768px) and (max-width: 1023px) {
+	/* La partie aside */
+		aside {
+			max-width: auto;
+			height: 680px;
+			margin: 30px 30px 0 30px;
+		}
+	
+	/* Le skippeur */
+		
+	/* Photos */
+		
+	/* Vidéo */
+}
+
+/********** FORMAT TELEPHONES PORTABLE **********/
+@media (max-width: 767px) {
+	/* La partie aside */
+		aside {
+			max-width: 90%;
+			height: 300px;
+			margin: 20px auto 0 auto;
+		}
+	
+	/* Le skippeur */
+		
+	/* Photos */
+		
+	/* Vidéo */
 }

@@ -8,10 +8,9 @@
 		<title>Contact</title>
 	</head>
 	<body>
-
 		<!-- En-tête de page -->
 		<header>
-			<!-- Logo du menu -->
+			<!-- Logo Talent du menu -->
 			<table class="logo_menu">
 				<tr>
 					<td>
@@ -19,11 +18,11 @@
 					</td>
 					<td>
 						<!-- L'icone pour le menu déroulant pour les résolutions d'écran <= 767px -->
-						<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+						<div class="menu_icon" onClick="menuBurger()">&#9776;</div>
 					</td>
 				</tr>
 			</table>
-			<!-- Le menu -->
+			<!-- Le menu avec les 5 pages -->
 			<nav class="menu_nav" id="myMenu_nav">
 				<ul>
 					<li><a href="../index.html">Accueil</a></li>
@@ -34,7 +33,6 @@
 				</ul>
 			</nav>
 		</header>
-
 		<!-- Corps de la page -->		
 		<main>
 			<div class="content">
@@ -78,25 +76,16 @@
 			<!-- Menu de pied de page -->
 			<nav>
 				<ul>
-					<li><a href="./impressum.html">Impressum</a></li>
+					<li><a href="./web/impressum.html">Impressum</a></li>
 					<li><a href="mailto:contact@association-talen.ch">Contact Webmaster</a></li>
-					<li><a href="./conditions.html">Conditions d'utilisation</a></li>
-					<li><a href="./protection.html">Protection des données</a></li>
+					<li><a href="./web/conditions.html">Conditions d'utilisation</a></li>
+					<li><a href="./web/protection.html">Protection des données</a></li>
 				</ul>
 				<p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
 			</nav>
 		</footer>
 
-		<!-- Script en JS pour le menu déroulant -->
-		<script>
-			function myFunction() {
-				var x = document.getElementById("myMenu_nav");
-				if(x.className === "menu_nav") {
-					x.className += " responsive";
-				} else {
-					x.className = "menu_nav";
-				}
-			}
-		</script>
+		<!-- Script en JS pour le menu déroulant dans la version mobile du site -->
+		<script src="../scripts/menuburgeur.js" ></script> 
 	</body>
 </html>

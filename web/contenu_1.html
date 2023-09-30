@@ -9,8 +9,8 @@
 	</head>
 	<body>
 		<!-- En-tête de page -->
-		<header class="fixed-header">
-			<!-- Logo du menu -->
+		<header>
+			<!-- Logo Talent du menu -->
 			<table class="logo_menu">
 				<tr>
 					<td>
@@ -18,11 +18,11 @@
 					</td>
 					<td>
 						<!-- L'icone pour le menu déroulant pour les résolutions d'écran <= 767px -->
-						<div class="menu_icon" onclick="myFunction()">&#9776;</div>
+						<div class="menu_icon" onClick="menuBurger()">&#9776;</div>
 					</td>
 				</tr>
 			</table>
-			<!-- Le menu -->
+			<!-- Le menu avec les 5 pages -->
 			<nav class="menu_nav" id="myMenu_nav">
 				<ul>
 					<li><a href="../index.html">Accueil</a></li>
@@ -32,19 +32,19 @@
 					<li><a href="./contact.html">Contact</a></li>
 				</ul>
 			</nav>
+			<!-- Le menu de navigation dans la page -->
 			<link rel="stylesheet" href="../css/style_contenu_1.css">
 			<!-- Menu navigation type ancrage -->
-			<nav class="menu_aside fixed-menu">
+			<nav class="menu_aside">
 				<ul>
 					<li style="margin-right: 8px;"><a class="table" href="#course">La course</a></li>
 					<li style="margin-right: 8px;"><a class="table" href="#bateau">Le bateau</a></li>
-					<li><a class="table" href="#participation">Préparation</a></li>
+					<li><a class="table" href="#participation">Participation</a></li>
 				</ul>
 			</nav>
 		</header>
-
 		<!-- Corps de la page -->		
-		<main class="main-content">
+		<main>
 			<!-- Les éléments de la partie aside -->
 			<aside>
 				<!-- Mini Transat -->
@@ -76,8 +76,9 @@
 						<tr><th>Longueur HT :</th><td>6.50 m</td></tr>
 						<tr><th>Largeur :</th><td>2.95 m</td></tr>
 						<tr><th>Poids :</th><td>~900 kg</td></tr>
-					  </table>
+					</table>
 				</div>
+				
 				<!-- Participation -->
 				<div class="participation">
 					<h2 id="participation">Ce qu'il faut faire pour y participer ?</h2>
@@ -96,70 +97,70 @@
 							<th>Dates</th>
 							<th>Course</th>
 							<th>Cat.</th>
-							<th>Solo<br>/ Double</th>
+							<th>Solo /<br>Double</th>
 							<th>Parcours et nombre de milles</th>
 						</tr>
 						<tr>
-							<td>7 – 12 sept.e 22<br><em>(départ le 9 sept.)</em></td>
+							<td>7 – 12 sept. 22<br><em>(départ le 9 sept.)</em></td>
 							<td>222 MINI SOLO</td>
 							<td>C</td>
-							<td>Solo</td>
+							<td>S</td>
 							<td>Départ et arrivée à Gênes (I)<br>222 nm</td>
 						</tr>
 						<tr>
 							<td>Mars 23</td>
 							<td>MINI GOLF</td>
 							<td>C</td>
-							<td>Solo</td>
+							<td>S</td>
 							<td>Départ et arrivée de la Grande Motte (F)<br>100 nm</td>
 						</tr>
 						<tr>
 							<td>Avril 23</td>
 							<td>SOLOMED 1</td>
 							<td>C</td>
-							<td>Solo</td>
+							<td>S</td>
 							<td>Départ de Barcelone (E) et arrivée à Sa Rapita (E)<br>160 nm</td>
 						</tr>
 						<tr>
 							<td>Avril 23</td>
 							<td>SOLOMED 2</td>
 							<td>B</td>
-							<td>Solo</td>
+							<td>S</td>
 							<td>Sa Rapita (E) – Saidia (MAROC) – Barcelone (E)<br>860 nm</td>
 						</tr>
 						<tr>
 							<td>Avril 23</td>
 							<td>GPI</td>
 							<td>B</td>
-							<td>Double</td>
+							<td>D</td>
 							<td>Départ et arrivée à Gênes (I)<br>500 nm</td>
 						</tr>
 						<tr>
 							<td>Avril – mai 23</td>
 							<td>CORSICA MED</td>
 							<td>B</td>
-							<td>Solo</td>
+							<td>S</td>
 							<td>Départ/arrivée à Marseille (F)<br>500 nm</td>
 						</tr>
 						<tr>
 							<td>Août – sept. 23</td>
 							<td>MARE NOSTRUM</td>
 							<td>B</td>
-							<td>Double</td>
+							<td>D</td>
 							<td>Départ et arrivée à Garraf (E)<br>500 nm</td>
 						</tr>
 						<tr>
 							<td>Septembre 23</td>
 							<td>222 MINI SOLO</td>
 							<td>C</td>
-							<td>Solo</td>
+							<td>S</td>
 							<td>Départ et arrivée à Gênes (I)<br>222 nm</td>
 						</tr>
 						<tr>
 							<td>Septembre 23</td>
 							<td>MINI BARCELONA</td>
 							<td>B</td>
-							<td>Solo</td>
+							<td>S</td>
 							<td>Départ/arrivée Barcelone (E)<br>300 nm</td>
 						</tr>
 					</table>
@@ -181,16 +182,7 @@
 			</nav>
 		</footer>
 
-		<!-- Script en JS pour le menu déroulant -->
-		<script>
-			function myFunction() {
-				var x = document.getElementById("myMenu_nav");
-				if(x.className === "menu_nav") {
-					x.className += " responsive";
-				} else {
-					x.className = "menu_nav";
-				}
-			}
-		</script>
+		<!-- Script en JS pour le menu déroulant dans la version mobile du site -->
+		<script src="../scripts/menuburgeur.js" ></script> 
 	</body>
 </html>

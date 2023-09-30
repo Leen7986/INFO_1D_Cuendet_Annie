@@ -49,7 +49,7 @@
 			width: 250px;
 		}
 
-	/* Menu pour les ordinateurs */
+	/* Menu pour format ordinateur */
 		.menu_nav {
 			text-align: center;
 			font-family: 'Teko-semibold';
@@ -57,7 +57,7 @@
 			list-style-type: none;
 			text-transform: uppercase;
 		}
-		/* l'icone burger ne s'affiche pas */
+		/* pour que l'icone burger ne s'affiche pas */
 		.menu_icon {
 			display: none;
 		}
@@ -65,6 +65,7 @@
 		.menu_nav ul {
 			margin: 0px;
 			margin-bottom: 30px;
+			padding: 0px;
 		}
 
 		.menu_nav li {
@@ -72,16 +73,16 @@
 			margin-right: 25px;
 			position: relative;
 		}
-		/* Couleur de base */
+		/* Couleur de base du menu */
 		#myMenu_nav a {
 			text-decoration: none;
 			color: #091723;
 		}
-		/* Couleur au survol */
+		/* Couleur au survol du menu */
 		#myMenu_nav a:hover {
 			color: #57788C;
 		}
-		/* Couleur page active */
+		/* Couleur page active du menu */
 		#myMenu_nav a.active {
 			color: #D8AE44;
 		}
@@ -323,7 +324,7 @@
 			text-align: center;
 			padding-top: 15px;
 			padding-bottom: 5px;
-			font-size: 12px;
+			font-size: 10px;
 		}
 
 		footer ul, p {
@@ -336,6 +337,7 @@
 			display: block;
 			position: relative;
 			line-height: 17px;
+			font-size: 11px;
 		}
 
 		footer p {
