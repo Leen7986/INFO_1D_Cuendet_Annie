@@ -1,3 +1,5 @@
+/* Feuille de style pour la page perso - Talent */
+
 .content {
 	max-width: 1040px;
 	background-color: rgba(255, 255, 255, 0.55);
@@ -15,8 +17,13 @@ main {
 	line-height: 25px;
 }
 
+.texte p {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
 
-/* FORMAT ORDINATEUR */
+/********** FORMAT ORDINATEUR **********/
 @media (min-width: 1024px) {
 
 	.content {
@@ -26,7 +33,7 @@ main {
 
 }
 
-/* FORMAT TABLETTE */
+/********** FORMAT TABLETTE **********/
 @media (min-width: 768px) and (max-width: 1023px) {
 
 	.content {
@@ -35,11 +42,28 @@ main {
 	}
 }
 
-/* FORMAT TELEPHONES PORTABLE */
+/********** FORMAT TELEPHONES PORTABLE **********/
 @media (max-width: 767px) {
 
 	.content {
 		padding: 5px;
 		margin: 2px;
+	}
+
+	.content h2 {
+		font-size: 12px;
+	}
+
+	.content p {
+		text-align: justify;
+		line-height: 20px;
+		font-size: 12px;
+	}
+
+	.texte p {
+		font-size: 12px;
+		margin-left: 20px;
+		margin-right: 20px;
+		text-align: center;
 	}
 }
