@@ -210,10 +210,12 @@
 		.participation p {
 			margin: 0px 20px 0px 20px;
 			line-height: 25px;
+			text-align: justify;
 		}
 
 		.participation li {
 			line-height: 25px;
+			text-align: justify;
 		}
 }
 
@@ -310,6 +312,7 @@
 			margin-left: 20px;
 			margin-right: 20px;
 		}
+
 		.photo_bateau img {
 			margin-bottom: 20px;
 			width: 100%;

@@ -48,9 +48,48 @@
 	}
 
 	/* Le skippeur */
-		
+		.skippeur h2 {
+			margin: 0px 0px 20px 10px;
+			padding-top: 10px;
+		}
+
+		.skippeur table {
+			max-width: 1005px;
+		}
+
+		.skippeur td {
+			padding: 0px 10px 0px 10px;
+			vertical-align: top;
+			line-height: 25px;
+			text-align: justify;
+		}
+
+		.photo_martial {
+			width: 100%;
+			justify-content: center;
+			padding-bottom: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
 	/* Photos */
-		
+		.photos h2 {
+			margin: 0px 0px 20px 10px;
+			padding-top: 10px;
+		}
+		.photos img {
+			width: 50%;
+			padding-bottom: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.photos_martial {
+			display: flex;
+			justify-content: center;
+			position: relative;
+			padding-bottom: 10px;
+		  }
 	/* Vidéo */
 
 }
