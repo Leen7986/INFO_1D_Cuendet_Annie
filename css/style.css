@@ -88,6 +88,9 @@
 		}
 		
 	/* Menu en pied de page pour les ordinateurs */
+		footer {
+			padding-top: 50px;
+		}
 
 		footer nav {
 			text-align: center;
