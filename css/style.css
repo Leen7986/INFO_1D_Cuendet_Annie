@@ -132,6 +132,20 @@
 			color: rgb(188, 216, 237);
 			font-size: 15px;
 		}
+
+		/* Couleur de base du menu */
+			#myMenu_nav_footer a {
+				text-decoration: none;
+				color: rgb(188, 216, 237);
+			}
+		/* Couleur au survol du menu */
+			#myMenu_nav_footer a:hover {
+				color: #57788C;
+			}
+		/* Couleur page active du menu */
+			#myMenu_nav_footer a.active {
+				color: #D8AE44;
+			}
 }
 
 /********** FORMAT TABLETTE **********/
