@@ -11,18 +11,24 @@
 		display: flex;
 		justify-content: center;
 	}
+	
+	h2 {
+		font-family: 'teko-semibold';
+		font-weight: normal;
+		font-style: normal;
+		font-size: 35px;
+	}
 
-	.content p {
-		width: 50%;
-		float: left;
+	.label input {
+		min-width: 47%;
+		margin-right: 20px;
 		margin-bottom: 20px;
 	}
 
-	/* texte en gris dans le champ */
-	input::placeholder {
-		color: darkgray;
+	input[type="radio"] {
+		margin: 10px 5px 20px 10px;
 	}
-
+	
 	input {
 		background-color: rgb(244, 244, 244);
 		border-width: 0px;
@@ -32,17 +38,11 @@
 		display: inline-block;
 		font-size: 14px;
 		padding: 16px;
-		width: 90%;
+		color: black;
 	}
 
-	/* input {
-		padding: 16px;
-	} */
-
-	.textarea {
-		clear: left;
-	}
-
+	/* texte en gris dans le champ */
+	input::placeholder,
 	textarea::placeholder {
 		color: darkgray;
 	}
@@ -61,10 +61,34 @@
 		font-family: 'Verdana';
 	}
 
+	div p {
+		margin-top: 10px;
+	}
+
+	.button_send {
+		float: right;
+		display: flex;
+		height: 50px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: rgb(9, 23, 35);
+		border-radius: 3px;
+
+	}
+
+	button {
+		font-size: 15px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		padding: 4.5px 15px 4.5px 15px;
+		background-color: transparent;
+	}
+
 /********** FORMAT ORDINATEUR **********/
 @media (min-width: 1024px) {
 
 	.content {
+		width: 1040px;
 		padding: 20px;
 		margin: 50px;
 	}
@@ -77,6 +101,11 @@
 		padding: 15px;
 		margin: 20px;
 	}
+
+	.label input {
+		min-width:calc(100% - 10px);
+		margin-bottom: 15px;
+	}
 }
 
 /********** FORMAT TELEPHONES PORTABLE **********/
@@ -87,7 +116,39 @@
 		margin: 2px;
 	}
 
-	.content h2 {
+	h2 {
+		font-size: 20px;
+		margin-left: 10px;
+	}
+
+	.label input {
+		min-width:calc(100% - 10px);
+		margin-bottom: 15px;
+	}
+
+	.label {
+		padding-left: 10px;
+	}
+
+	input[type="radio"] {
+		margin: 10px 5px 10px 10px;
+	}
+
+	.radio {
+		padding-left: 10px;
+
+	}
+
+	input,
+	label,
+	p {
 		font-size: 12px;
+	}
+
+	.textarea {
+		margin-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+
 	}
 }

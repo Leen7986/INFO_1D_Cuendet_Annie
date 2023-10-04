@@ -1,6 +1,6 @@
 /* Feuille de style pour les pages annexes */
 
-/********** IMPRESSUM **********/
+/********** IMPRESSUM, PROTECTION, CONDITIONS **********/
 	.content {
 		max-width: 1040px;
 		min-height: 500px;
@@ -15,8 +15,23 @@
 		justify-content: center;
 	}
 
+	.content h2 {
+		font-family: 'teko-semibold';
+		font-weight: normal;
+		font-style: normal;
+		font-size: 35px;
+		margin: 10px 0 20px 0;
+	}
+
+	.content h4 {
+		padding-left: 15px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+
 	.content p {
-		padding-bottom: 16px;
+		padding-left: 30px;
+		padding-right: 20px;
 		text-align: justify;
 		line-height: 25px;
 	}
@@ -48,7 +63,23 @@
 	}
 
 	.content h2 {
+		font-size: 20px;
+		margin-left: 10px;
+	}
+
+	.content h4 {
+		font-size: 13px;
+		padding-left: 20px;
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+
+	.content p {
 		font-size: 12px;
+		padding-left: 30px;
+		padding-right: 20px;
+		text-align: justify;
+		line-height: 20px;
 	}
 
 }

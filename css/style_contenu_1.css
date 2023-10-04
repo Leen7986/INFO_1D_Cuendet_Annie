@@ -37,6 +37,14 @@
 			color: #091723;
 			font-size: 15px;
 		}
+
+		h2 {
+			font-family: 'teko-semibold';
+			font-weight: normal;
+			font-style: normal;
+			font-size: 35px;
+		}
+		
 	/* La course */
 		.mini_transat h2 {
 			margin: 0px 0px 20px 10px;
@@ -282,11 +290,14 @@
 		.menu_aside a {
 			font-size: 11px;
 		}
+
+		h2 {
+			font-size: 20px;
+		}
 	
 	/* La course */	
 		.mini_transat h2 {
 			margin: 0px 0px 10px 0px;
-			font-size: 12px;
 		}
 
 		.mini_transat th {
@@ -303,7 +314,6 @@
 		.bateau h2 {
 			margin: 20px 0 10px 0;
 			padding-top: 10px;
-			font-size: 12px;
 		}
 
 		.photo_bateau {
@@ -332,7 +342,6 @@
 	/* Participation */
 		.participation h2 {
 			margin: 30px 0 10px 0;
-			font-size: 12px;
 		}
 
 		.participation p,

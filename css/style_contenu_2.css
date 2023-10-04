@@ -37,6 +37,13 @@
 			color: #091723;
 			font-size: 15px;
 		}
+
+		h2 {
+			font-family: 'teko-semibold';
+			font-weight: normal;
+			font-style: normal;
+			font-size: 35px;
+		}
 	
 	/* Le skippeur */
 		.skippeur h2 {
@@ -132,13 +139,6 @@
 			float: right;
 			max-width: 40%;
 		}
-
-
-
-
-	/* Photos */
-		
-	/* Vidéo */
 }
 
 /********** FORMAT TELEPHONES PORTABLE **********/
@@ -148,6 +148,10 @@
 			max-width: 90%;
 			height: 300px;
 			margin: 20px auto 0 auto;
+		}
+
+		h2 {
+			font-size: 20px;
 		}
 
 	/* La partie menu de l'aside */
@@ -160,10 +164,6 @@
 		}
 	
 	/* Le skippeur */
-		.skippeur h2 {
-			font-size: 12px;
-		}
-
 		.skippeur p {
 			font-size: 12px;
 		}
@@ -181,19 +181,11 @@
 		}
 
 	/* Photos */
-		.photos h2 {
-			font-size: 12px;
-		}
-
 		.photos img {
 			width: 60%;
 		}
 
 	/* Vidéo */
-		.video h2 {
-			font-size: 12px;
-		}
-
 		video {
 			width: 100%;
 		}
