@@ -1,3 +1,6 @@
+/* Feuille de style générale pour les headers et footer de pages avec les menus */
+
+/********** FORMAT GENERALE **********/
 /* Police d'écriture supplémentaire */
 	@font-face {
 		font-family: 'teko-semibold';
@@ -24,8 +27,6 @@
 		background-position-y: top;
 	}
 
-/********** FORMAT GENERALE **********/
-
 		/* Couleur de base du menu */
 		#myMenu_nav_footer a {
 			text-decoration: none;
@@ -42,331 +43,329 @@
 
 /********** FORMAT ORDINATEUR **********/
 @media (min-width: 1024px) {
-	/* Logo */
-		.logo_menu {
-			margin-top: 30px;
-			width: 100%;
-			table-layout: fixed;
-		}
+/* Logo */
+	.logo_menu {
+		margin-top: 30px;
+		width: 100%;
+		table-layout: fixed;
+	}
 
-		.logo_menu td:first-child {
-			width: auto;
-			text-align: center;
-			padding-left: 40px;
-		}
+	.logo_menu td:first-child {
+		width: auto;
+		text-align: center;
+		padding-left: 40px;
+	}
 
-		.logo_menu td:last-child {
-			width: 40px;
-			text-align: center;
-			padding: 0;
-		}
+	.logo_menu td:last-child {
+		width: 40px;
+		text-align: center;
+		padding: 0;
+	}
 
-		.logo_menu img {
-			width: 250px;
-		}
+	.logo_menu img {
+		width: 250px;
+	}
 
-	/* Menu pour format ordinateur */
-		.menu_nav {
-			text-align: center;
-			font-family: 'Teko-semibold';
-			font-size: 25px;
-			list-style-type: none;
-			text-transform: uppercase;
-		}
-		/* pour que l'icone burger ne s'affiche pas */
-		.menu_icon {
-			display: none;
-		}
+/* Menu pour format ordinateur */
+	.menu_nav {
+		text-align: center;
+		font-family: 'Teko-semibold';
+		font-size: 25px;
+		list-style-type: none;
+		text-transform: uppercase;
+	}
+/* pour que l'icone burger ne s'affiche pas */
+	.menu_icon {
+		display: none;
+	}
 
-		.menu_nav ul {
-			margin: 0px;
-			margin-bottom: 30px;
-			padding: 0px;
-		}
+	.menu_nav ul {
+		margin: 0px;
+		margin-bottom: 30px;
+		padding: 0px;
+	}
 
-		.menu_nav li {
-			display: inline-block;
-			margin-right: 25px;
-			position: relative;
-		}
-		/* Couleur de base du menu */
-		#myMenu_nav a {
-			text-decoration: none;
-			color: #091723;
-		}
-		/* Couleur au survol du menu */
-		#myMenu_nav a:hover {
-			color: #57788C;
-		}
-		/* Couleur page active du menu */
-		#myMenu_nav a.active {
-			color: #D8AE44;
-		}
+	.menu_nav li {
+		display: inline-block;
+		margin-right: 25px;
+		position: relative;
+	}
+/* Couleur de base du menu */
+	#myMenu_nav a {
+		text-decoration: none;
+		color: #091723;
+	}
+	/* Couleur au survol du menu */
+	#myMenu_nav a:hover {
+		color: #57788C;
+	}
+	/* Couleur page active du menu */
+	#myMenu_nav a.active {
+		color: #D8AE44;
+	}
 		
-	/* Menu en pied de page pour les ordinateurs */
-		footer {
-			padding-top: 50px;
-		}
+/* Menu en pied de page pour les ordinateurs */
+	footer {
+		padding-top: 50px;
+	}
 
-		footer nav {
-			text-align: center;
-			list-style-type: none;
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
+	footer nav {
+		text-align: center;
+		list-style-type: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 
-		footer ul, p {
-			padding: 0px;
-			margin: 0px;
-		}
+	footer ul, p {
+		padding: 0px;
+		margin: 0px;
+	}
 
-		footer p {
-			margin-top: 15px;
-			color: rgb(188, 216, 237);
-		}
+	footer p {
+		margin-top: 15px;
+		color: rgb(188, 216, 237);
+	}
 
-		footer li {
-			display: inline-block;
-			position: relative;
-			margin: 0px;
-		}
+	footer li {
+		display: inline-block;
+		position: relative;
+		margin: 0px;
+	}
 
-		footer li:not(:first-child)::before {
-			content: "|";
-			position: relative;
-			top: 2px;
-			margin: 0;
-			padding-left: 11px;
-			padding-right: 11px;
-			font-size: 20px;
-			color: rgb(188, 216, 237);
-		}
+	footer li:not(:first-child)::before {
+		content: "|";
+		position: relative;
+		top: 2px;
+		margin: 0;
+		padding-left: 11px;
+		padding-right: 11px;
+		font-size: 20px;
+		color: rgb(188, 216, 237);
+	}
 
-		footer a {
-			text-decoration: none;
-			font-weight: bold;
-			color: rgb(188, 216, 237);
-			font-size: 15px;
-		}
+	footer a {
+		text-decoration: none;
+		font-weight: bold;
+		color: rgb(188, 216, 237);
+		font-size: 15px;
+	}
 }
 
 /********** FORMAT TABLETTE **********/
 @media (min-width: 768px) and (max-width: 1023px) {
-	/* Logo */
-		.logo_menu {
-			margin-top: 20px;
-			width: 100%;
-			table-layout: fixed;
-		}
+/* Logo */
+	.logo_menu {
+		margin-top: 20px;
+		width: 100%;
+		table-layout: fixed;
+	}
 
-		.logo_menu td:first-child {
-			width: auto;
-			text-align: center;
-			padding-left: 40px;
-		}
+	.logo_menu td:first-child {
+		width: auto;
+		text-align: center;
+		padding-left: 40px;
+	}
 
-		.logo_menu td:last-child {
-			width: 40px;
-			text-align: center;
-			padding: 0;
-		}
+	.logo_menu td:last-child {
+		width: 40px;
+		text-align: center;
+		padding: 0;
+	}
 
-		.logo_menu img {
-			width: 200px;
-		}
+	.logo_menu img {
+		width: 200px;
+	}
 
-	/* Menu pour les tablettes */
-		/* Pour faire disparaite le texte du menu déroulant */
-		.menu_nav {
-			display: none;
-		}
-		/* L'icone du menu burger */
-		.menu_icon {
-			font-size: 30px;
-			cursor: pointer;
-		}
-		/* Le menu déroulant */
-		#myMenu_nav.responsive {
-			display: block;
-			position: fixed;
-			top: 80px;
-			right: 0;
-			z-index: 999;
-			transform: translateX(0);
-		}
-		
-		#myMenu_nav ul{
-			font-family: 'Teko-semibold';
-			font-size: 20px;
-			text-transform: uppercase;
-			text-align: right;
-			padding: 20px;
-			background-color: rgba(255, 255, 255, 0.8);
-			margin: 0px;
-		}
+/* Menu pour les tablettes */
+/* Pour faire disparaite le texte du menu déroulant */
+	.menu_nav {
+		display: none;
+	}
+	/* L'icone du menu burger */
+	.menu_icon {
+		font-size: 30px;
+		cursor: pointer;
+	}
+	/* Le menu déroulant */
+	#myMenu_nav.responsive {
+		display: block;
+		position: fixed;
+		top: 80px;
+		right: 0;
+		z-index: 999;
+		transform: translateX(0);
+	}
+	
+	#myMenu_nav ul{
+		font-family: 'Teko-semibold';
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: right;
+		padding: 20px;
+		background-color: rgba(255, 255, 255, 0.8);
+		margin: 0px;
+	}
 
-		#myMenu_nav li {
-			list-style-type: none;
-		}
-		/* Couleur de base */
-		#myMenu_nav a {
-			text-decoration: none;
-			color: #091723;
-		}
-		/* Couleur au survol */
-		#myMenu_nav a:hover {
-			color: #57788C;
-		}
-		/* Couleur page active */
-		#myMenu_nav a.active {
-			color: #D8AE44;
-		}
+	#myMenu_nav li {
+		list-style-type: none;
+	}
+/* Couleur de base */
+	#myMenu_nav a {
+		text-decoration: none;
+		color: #091723;
+	}
+/* Couleur au survol */
+	#myMenu_nav a:hover {
+		color: #57788C;
+	}
+/* Couleur page active */
+	#myMenu_nav a.active {
+		color: #D8AE44;
+	}
 
-	/* Menu en pied de page pour les tablettes */
+/* Menu en pied de page pour les tablettes */
+	footer nav {
+		text-align: center;
+		list-style-type: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 
-		footer nav {
-			text-align: center;
-			list-style-type: none;
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
+	footer ul, p {
+		padding: 0px;
+		margin: 0px;
+	}
 
-		footer ul, p {
-			padding: 0px;
-			margin: 0px;
-		}
+	footer li {
+		display: inline-block;
+		position: relative;
+	}
 
-		footer li {
-			display: inline-block;
-			position: relative;
-		}
+	footer p {
+		margin-top: 15px;
+		color: rgb(188, 216, 237);
+		font-size: 12px;
+	}
 
-		footer p {
-			margin-top: 15px;
-			color: rgb(188, 216, 237);
-			font-size: 12px;
-		}
+	footer a {
+		text-decoration: none;
+		font-weight: bold;
+		color: rgb(188, 216, 237);
+		font-size: 12px;
+	}
 
-		footer a {
-			text-decoration: none;
-			font-weight: bold;
-			color: rgb(188, 216, 237);
-			font-size: 12px;
-		}
-
-		footer li:not(:first-child)::before {
-			content: "|";
-			position: relative;
-			top: 2px;
-			margin: 0;
-			padding-left: 0px;
-			padding-right: 6px;
-			font-size: 18px;
-			color: rgb(188, 216, 237);
-		}
+	footer li:not(:first-child)::before {
+		content: "|";
+		position: relative;
+		top: 2px;
+		margin: 0;
+		padding-left: 0px;
+		padding-right: 6px;
+		font-size: 18px;
+		color: rgb(188, 216, 237);
+	}
 }
 
 /********** FORMAT TELEPHONES PORTABLE **********/
 @media (max-width: 767px) {
-	/* Logo */
-		.logo_menu {
-			width: 100%;
-			table-layout: fixed;
-		}
+/* Logo */
+	.logo_menu {
+		width: 100%;
+		table-layout: fixed;
+	}
 
-		.logo_menu td:first-child {
-			width: auto;
-			text-align: center;
-			padding-left: 40px;
-		}
+	.logo_menu td:first-child {
+		width: auto;
+		text-align: center;
+		padding-left: 40px;
+	}
 
-		.logo_menu td:last-child {
-			width: 40px;
-			text-align: center;
-			padding: 0;
-		}
+	.logo_menu td:last-child {
+		width: 40px;
+		text-align: center;
+		padding: 0;
+	}
 
-		.logo_menu img {
-			width: 150px;
-		}
+	.logo_menu img {
+		width: 150px;
+	}
 
-	/* Menu pour les téléphones portable */
-		/* Pour faire disparaite le texte du menu déroulant */
-		.menu_nav {
-			display: none;
-		}
-		/* L'icone du menu burger */
-		.menu_icon {
-			font-size: 30px;
-			cursor: pointer;
-		}
-		/* Le menu déroulant */
-		#myMenu_nav.responsive {
-			display: block;
-			position: fixed;
-			top: 50px;
-			right: 0px;
-			z-index: 999;
-			transform: translateX(0);
-		}
-		
-		#myMenu_nav ul{
-			font-family: 'Teko-semibold';
-			font-size: 20px;
-			text-transform: uppercase;
-			text-align: right;
-			padding: 20px;
-			background-color: rgba(255, 255, 255, 0.8);
-			margin: 0px;
-		}
-
-		#myMenu_nav li {
-			list-style-type: none;
-		}
-		/* Couleur de base */
-		#myMenu_nav a {
-			text-decoration: none;
-			color: #091723;
-		}
-		/* Couleur au survol */
-		#myMenu_nav a:hover {
-			color: #57788C;
-		}
-		/* Couleur page active */
-		#myMenu_nav a.active {
-			color: #D8AE44;
-		}
-
-	/* Pied de page pour les téléphones portable */
+/* Menu pour les téléphones portable */
+/* Pour faire disparaite le texte du menu déroulant */
+	.menu_nav {
+		display: none;
+	}
+/* L'icone du menu burger */
+	.menu_icon {
+		font-size: 30px;
+		cursor: pointer;
+	}
+/* Le menu déroulant */
+	#myMenu_nav.responsive {
+		display: block;
+		position: fixed;
+		top: 50px;
+		right: 0px;
+		z-index: 999;
+		transform: translateX(0);
+	}
 	
-		footer nav {
-			text-align: center;
-			padding-top: 15px;
-			padding-bottom: 5px;
-			font-size: 10px;
-		}
+	#myMenu_nav ul{
+		font-family: 'Teko-semibold';
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: right;
+		padding: 20px;
+		background-color: rgba(255, 255, 255, 0.8);
+		margin: 0px;
+	}
 
-		footer ul, p {
-			padding: 0px;
-			margin: 0px;
-		}
+	#myMenu_nav li {
+		list-style-type: none;
+	}
+/* Couleur de base */
+	#myMenu_nav a {
+		text-decoration: none;
+		color: #091723;
+	}
+	/* Couleur au survol */
+	#myMenu_nav a:hover {
+		color: #57788C;
+	}
+	/* Couleur page active */
+	#myMenu_nav a.active {
+		color: #D8AE44;
+	}
 
-		footer li {
-			list-style-type: none;
-			display: block;
-			position: relative;
-			line-height: 17px;
-			font-size: 11px;
-		}
+/* Pied de page pour les téléphones portable */
+	footer nav {
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 5px;
+		font-size: 10px;
+	}
 
-		footer p {
-			margin-top: 5px;
-			color: rgb(188, 216, 237);
-		}
+	footer ul, p {
+		padding: 0px;
+		margin: 0px;
+	}
 
-		footer a {
-			text-decoration: none;
-			font-weight: bold;
-			color: rgb(188, 216, 237);
-		}
+	footer li {
+		list-style-type: none;
+		display: block;
+		position: relative;
+		line-height: 17px;
+		font-size: 11px;
+	}
+
+	footer p {
+		margin-top: 5px;
+		color: rgb(188, 216, 237);
+	}
+
+	footer a {
+		text-decoration: none;
+		font-weight: bold;
+		color: rgb(188, 216, 237);
+	}
 }

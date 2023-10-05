@@ -1,192 +1,192 @@
 /* Feuille de style pour la page contenu_2 - Martial Cuendet */
 
 /********** FORMAT GENERALE **********/
-	/* La partie aside */
-		aside {
-			display: block;
-			overflow: auto;
-			padding-left: 10px;
-			padding-right: 10px;
-			margin: 0 auto 0 auto;
-			background-color: rgba(255, 255, 255, 0.55);
-			box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.5);
-		}
-		/* La partie menu de l'aside */
-		.menu_aside {
-			text-align: center;
-		}
+/* La partie aside */
+	aside {
+		display: block;
+		overflow: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: 0 auto 0 auto;
+		background-color: rgba(255, 255, 255, 0.55);
+		box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.5);
+	}
+	/* La partie menu de l'aside */
+	.menu_aside {
+		text-align: center;
+	}
 
-		.menu_aside ul {
-			padding: 0px;
-			margin: 10px 0px 20px 0px;
-		}
+	.menu_aside ul {
+		padding: 0px;
+		margin: 10px 0px 20px 0px;
+	}
 
-		.menu_aside li {
-			padding: 10px 20px 10px 20px;
-			background-color: #57788C;
-			box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.5);
-			border-radius: 20px;
-			margin-right: 10px;
-			display: inline-block;
-			position: relative;
-		}
+	.menu_aside li {
+		padding: 10px 20px 10px 20px;
+		background-color: #57788C;
+		box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.5);
+		border-radius: 20px;
+		margin-right: 10px;
+		display: inline-block;
+		position: relative;
+	}
 
-		.menu_aside a {
-			text-decoration: none;
-			font-weight: bold;
-			color: #091723;
-			font-size: 15px;
-		}
+	.menu_aside a {
+		text-decoration: none;
+		font-weight: bold;
+		color: #091723;
+		font-size: 15px;
+	}
 
-		h2 {
-			font-family: 'teko-semibold';
-			font-weight: normal;
-			font-style: normal;
-			font-size: 35px;
-		}
+	h2 {
+		font-family: 'teko-semibold';
+		font-weight: normal;
+		font-style: normal;
+		font-size: 35px;
+	}
+
+/* Le skippeur */
+	.skippeur h2 {
+		margin: 0px 0px 20px 10px;
+		padding-top: 10px;
+	}
+
+	.skippeur p {
+		margin-left: 10px;
+		text-align: justify;
+	}
 	
-	/* Le skippeur */
-		.skippeur h2 {
-			margin: 0px 0px 20px 10px;
-			padding-top: 10px;
-		}
+	.skippeur ul {
+		text-align: justify;
+	}
 
-		.skippeur p {
-			margin-left: 10px;
-			text-align: justify;
-		}
-		
-		.skippeur ul {
-			text-align: justify;
-		}
+/* Photos */
+	.photos h2 {
+		margin: 50px 0px 20px 10px;
+		padding-top: 10px;
+	}
 
-	/* Photos */
-		.photos h2 {
-			margin: 50px 0px 20px 10px;
-			padding-top: 10px;
-		}
+	.photos {
+		clear: right;
+	}
 
-		.photos {
-			clear: right;
-		}
+	.photos img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
 
-		.photos img {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-		}
+/* Vidéo */
+	.video h2 {
+		margin: 50px 0px 20px 10px;
+		padding-top: 10px;
+	}
 
-	/* Vidéo */
-		.video h2 {
-			margin: 50px 0px 20px 10px;
-			padding-top: 10px;
-		}
-
-		video {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			padding-top: 50px;
-			padding-bottom: 50px;
-		}
+	video {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 
 /********** FORMAT ORDINATEUR **********/
 @media (min-width: 1024px) {
-	/* La partie aside */
-		aside {
-			max-width: 1040px;
-			height: 680px;
-			margin: 0 auto 0 auto;
-		}
+/* La partie aside */
+	aside {
+		max-width: 1040px;
+		height: 680px;
+		margin: 0 auto 0 auto;
+	}
 
-	/* Le skippeur */
-		.skippeur p {
-			line-height: 25px;
-		}
-		
-		.skippeur ul {
-			line-height: 25px;
-		}
+/* Le skippeur */
+	.skippeur p {
+		line-height: 25px;
+	}
+	
+	.skippeur ul {
+		line-height: 25px;
+	}
 
-		.skippeur img {
-			padding-left: 25px;
-			float: right;
-			max-width: 40%;
-		}
+	.skippeur img {
+		padding-left: 25px;
+		float: right;
+		max-width: 40%;
+	}
 }
 
 /********** FORMAT TABLETTE **********/
 @media (min-width: 768px) and (max-width: 1023px) {
-	/* La partie aside */
-		aside {
-			max-width: auto;
-			height: 680px;
-			margin: 30px 30px 0 30px;
-		}
-	
-	/* Le skippeur */
-		.skippeur p {
-			line-height: 25px;
-		}
-		
-		.skippeur ul {
-			line-height: 25px;
-		}
+/* La partie aside */
+	aside {
+		max-width: auto;
+		height: 680px;
+		margin: 30px 30px 0 30px;
+	}
 
-		.skippeur img {
-			padding-left: 25px;
-			float: right;
-			max-width: 40%;
-		}
+/* Le skippeur */
+	.skippeur p {
+		line-height: 25px;
+	}
+	
+	.skippeur ul {
+		line-height: 25px;
+	}
+
+	.skippeur img {
+		padding-left: 25px;
+		float: right;
+		max-width: 40%;
+	}
 }
 
 /********** FORMAT TELEPHONES PORTABLE **********/
 @media (max-width: 767px) {
-	/* La partie aside */
-		aside {
-			max-width: 90%;
-			height: 300px;
-			margin: 20px auto 0 auto;
-		}
+/* La partie aside */
+	aside {
+		max-width: 90%;
+		height: 300px;
+		margin: 20px auto 0 auto;
+	}
 
-		h2 {
-			font-size: 20px;
-		}
+	h2 {
+		font-size: 20px;
+	}
 
-	/* La partie menu de l'aside */
-		.menu_aside li {
-			padding: 1px 10px 5px 10px;
-		}
-		
-		.menu_aside a {
-			font-size: 11px;
-		}
+/* La partie menu de l'aside */
+	.menu_aside li {
+		padding: 1px 10px 5px 10px;
+	}
 	
-	/* Le skippeur */
-		.skippeur p {
-			font-size: 12px;
-		}
-		
-		.skippeur ul {
-			font-size: 12px;
-		}
+	.menu_aside a {
+		font-size: 11px;
+	}
 
-		.skippeur img {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			max-width: 60%;
-			justify-content: center;
-		}
+/* Le skippeur */
+	.skippeur p {
+		font-size: 12px;
+	}
+	
+	.skippeur ul {
+		font-size: 12px;
+	}
 
-	/* Photos */
-		.photos img {
-			width: 60%;
-		}
+	.skippeur img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 60%;
+		justify-content: center;
+	}
 
-	/* Vidéo */
-		video {
-			width: 100%;
-		}
+/* Photos */
+	.photos img {
+		width: 60%;
+	}
+
+/* Vidéo */
+	video {
+		width: 100%;
+	}
 }
